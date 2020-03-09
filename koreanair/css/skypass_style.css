@@ -1,0 +1,298 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+h2,p,span,li{font-family: inherit;}
+li{list-style: none;}
+button{cursor: pointer; outline: none; border: none;}
+input{outline: none; color: #222;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+#wrap{margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1280px;}
+
+/* sub_banner */
+#sub_banner{width: 100%;
+                max-width: 1920px;
+                min-width: 1240px;
+                height: 500px;
+                overflow: hidden;
+                position: relative;
+                margin: 0 auto;}
+.black{width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0;}
+
+.sub_banner_text_wrap{width: 1240px;
+                        height: 500px;
+                        top: 0;
+                        left: 50%;
+                        margin-left: -640px;
+                        position: absolute;}
+.sub_banner_text{position: absolute;
+                    top: 140px;
+                    left: 40px;
+                    color: #fff;
+                    font-family: 'NanumSquare', sans-serif;}
+.sub_banner_text h2{font-size: 48px;
+    font-weight: bold;}
+.sub_banner_text span{font-size: 15px;
+                        display: block;
+                        margin-top: 10px;
+                        margin-left: 5px;}
+
+#sub_menu_wrap{width: 100%;
+                    height: 50px;
+                    border-bottom: 1px solid #9f9f9f;}
+.sub_menu{width: 1240px;
+                height: 50px;
+                margin: 0 auto;}
+.sub_menu > div{float: left;}
+.home{width: 60px;
+        height: 50px;
+        border-left: 1px solid #9f9f9f;
+        float: left;
+        background: url(../img/icon_home.png) no-repeat;}
+.first_menu{width: 240px;
+                height: 50px;
+                border-left: 1px solid #9f9f9f;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 15px;
+                color: #9f9f9f;
+                line-height: 50px;
+                position: relative;}
+.first_menu a{margin-left: 20px;
+                float: left;}
+.sub_dept2{position: absolute;
+                top: 50px;
+                font-size: 13px;
+                z-index: 2;
+                left: -1px;
+                border: 1px solid #9f9f9f;
+                border-top: none;}
+.sub_dept2 li{width: 240px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #fff;
+                color: #222;
+                display: none;}
+.sub_dept2 li:first-child{border-top: 1px solid #9f9f9f;}
+.sub_dept2 li:hover{background-color: #f8f8f8;
+                        color: #1e3d7d;
+                        font-weight: bold;}
+.second_menu,.third_menu{width: 240px;
+                height: 50px;
+                border-left: 1px solid #9f9f9f;
+                border-right: 1px solid #9f9f9f;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 15px;
+                color: #9f9f9f;
+                line-height: 50px;
+                position: relative;}
+.third_menu{border-left: none;}
+.second_menu a,.third_menu a{margin-left: 20px;
+                                float: left;}
+.arrow{background: url(../img/icon_bottom_arrow.png) no-repeat;
+            background-size: 10px;
+            width: 20px;
+            height: 20px;
+            margin-left: 210px;
+            margin-top: 23px;}
+/* sub_banner */
+
+/* ko_skypass */
+#ko_skypass{font-family: 'NanumSquare', sans-serif;
+                margin: 0 auto;
+                margin-top: 50px;
+                width: 100%;
+                max-width: 1240px;}
+
+.skypass_title{font-size: 42px;
+                    font-weight: 300;
+                    text-align: center;}
+.skypass_text{font-size: 18px;
+                    color: #555;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                    line-height: 28px;
+                    letter-spacing: 1px;}
+
+.skypass_icon{width: 660px;
+                margin: 0 auto;
+                margin-top: 70px;}
+.skypass_icon > div{float: left;
+                        margin-left: 100px;}
+.couch_up{margin-left: 0;}
+
+.couch_up img{width: 82px;
+                margin-bottom: 5px;}
+.mile img{width: 135px;
+                margin: 0 0 8px 10px;}
+.baggage img{width: 97px;
+                margin: 0 0 8px 10px;}
+.skypass_icon p{text-align: center;}
+/* ko_skypass */
+
+/* skypass_membership */
+#skypass_membership{width: 100%;
+                        max-width: 1240px;
+                        margin: 0 auto;
+                        margin-top: 120px;
+                        margin-bottom: 150px;
+                        font-family: 'NanumSquare', sans-serif;
+                        position: relative;}
+.membership_head_title{font-size: 42px;
+                            font-weight: 300;
+                            text-align: center;}
+.membership_head_text{font-size: 18px;
+                        color: #555;
+                        text-align: left;
+                        margin: 30px 0 0 30px;
+                        line-height: 28px;
+                        letter-spacing: 1px;
+                        text-align: center;}
+    /* 1열 */
+.membership_box{width: 1200px;
+                    margin: 0 auto;
+                    margin-top: 50px;}
+.member_card img{transition: 0.5s;}
+.member_card:hover img{width: 110%;
+                        margin-left: -20px;}
+
+.diamond{width: 1200px;}
+.diamond_img{width: 800px;
+                height: 330px;
+                overflow: hidden;
+                float: left;}
+.diamond_img img{width: 800px;
+                    margin-top: -80px;}
+
+.diamond .membership_title{width: 400px;
+                                height: 330px;
+                                float: right;}
+.membership_title{background-color: #1e3d7d;}
+.member_class{font-size: 18px;
+                color: #e0c799;
+                margin-left: 30px;}
+.member_text{font-size: 14px;
+                color: #fff;
+                line-height: 24px;
+                margin: 18px 0 0 30px;}
+.diamond .member_class{padding-top: 60px;}
+    /* 1열*/
+    /* 2열 */
+.membership_box_2{width: 1200px;
+                    margin: 0 auto;
+                    margin-top: 30px;}
+
+.platinum,.gold,.silver{width: 380px;
+                            float: left;
+                            margin-left: 30px;}
+.platinum{margin-left: 0;}
+.platinum_img,
+.gold_img,
+.silver_img{width: 380px;
+                height: 220px;
+                overflow: hidden;}
+.platinum_img img{width: 400px;
+                    margin-top: -20px;}
+.gold_img img{width: 400px;}
+.silver_img img{width: 400px;}
+.box_2_title{width: 380px;
+                height: 240px;}
+.box_2_title .member_class{padding-top: 35px;}
+    /* 2열 */
+    /* 3열 */
+.membership_box_3{width: 1200px;
+                    margin: 0 auto;
+                    margin-top: 30px;}
+.mile_pay,.benefit{width: 585px;
+                        float: left;
+                        margin-left: 30px;}
+.mile_pay{margin-left: 0;}
+.mile_pay_img,.benefit_img{width: 585px;
+                                height: 300px;
+                                overflow: hidden;}
+.mile_pay_img img{width: 585px;}
+.benefit_img img{width: 585px;}
+.box_3_title{width: 585px;
+                height: 240px;}
+.box_3_title .member_class{padding-top: 35px;}
+    /* 3열 */
+.view_more{font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color: #fff;
+                background: none;
+                margin: 30px 0 0 30px;
+                line-height: 25px;
+                height: 25px;
+                position: absolute;
+                z-index: 2;}
+.veiw_more a{display: block;
+                margin: auto;
+                width: 90px;
+                padding: 2px 0px;
+                position: relative;
+                transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+                z-index: 1;}
+.view_more a:after{content: "";
+                    display: block;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 2px;
+                    left: 2px;
+                    background-color: #fff;
+                    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+                    transform-origin: bottom center;
+                    z-index: -1;}
+.view_more a:hover{color: #fff;}
+.view_more a:hover:after{right: -5px;
+                            left: -5px;
+                            background-color: #1e3d7d;
+                            border: 1px solid #fff;
+                            height: 100%;}
+
+/*
+.skypass_join{width: 190px;
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #1e3d7d;
+                color: #1e3d7d;
+                font-size: 14px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 50px;
+                transition: 0.3s;}
+.skypass_join:hover{background-color: #1e3d7d;
+                        color: #fff;}
+*/
+.skypass_join{width: 190px;
+                height: 40px;
+                background: none;
+                border: 1px solid #1e3d7d;
+                color: #1e3d7d;
+                position: absolute;
+                bottom: -85px;
+                left: 50%;
+                margin-left: -95px;
+                transition: 0.3s;
+                overflow: hidden;
+                z-index: 1;}
+.skypass_join:hover{color: #fff;}
+.skypass_join:after{position: absolute;
+                        transition: 0.3s;
+                        content: '';
+                        width: 0;
+                        background: #1e3d7d;
+                        height: 300%;
+                        bottom: 0px;
+                        left: -10%;
+                        transform: skewX(15deg);
+                        z-index: -1;}
+.skypass_join:hover:after{width: 130%;}
+
+/* skypass_membership */

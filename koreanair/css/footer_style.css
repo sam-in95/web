@@ -1,0 +1,106 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+li{list-style: none;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+
+
+footer{width: 100%;
+        height: 420px;
+        background-color: #4589c2;
+        margin-top: 60px;
+        position: relative;
+        font-family: 'Nanum Gothic', sans-serif;}
+.footer_wrap{width: 1240px;
+                height: 230px;
+                padding-top: 60px;
+                margin: 0 auto;}
+.footer_top{width: 1240px;
+                height: 180px;
+                position: relative;
+                border-bottom: 1px solid #7baad2;}
+
+.footer_logo{float: left;
+                margin-top: 3px;}
+.footer_koreanair img{width: 130px;
+                        margin: 5px 0 0 3px;}
+.footer_skyteam img{width: 80px;
+                        margin: 25px 0 0 25px;}
+
+.footer_menu{display: block;
+                width: 630px;
+                margin-left: 280px;}
+.footer_menu ul{float: left;
+                    font-size: 15px;
+                    line-height: 34px;
+                    font-weight: 700;
+                    color: #fff;
+                    width: 190px;
+                    height: 172px;
+                    letter-spacing: 1px;}
+.footer_menu ul:nth-child(1){width: 150px;}
+.footer_menu ul:nth-child(4){width: 66px;}
+.footer_menu li{font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 400;}
+.footer_menu li:hover{text-decoration: underline;}
+.sns{position: absolute;
+        top: 8px;
+        right: 0;}
+.sns a{float: left;
+            margin-left: 23px;}
+.icon_facebook{background: url(../img/icon_sns_facdbook.png) no-repeat;
+            width: 25px;
+            height: 25px;
+            background-size: 25px;}
+.icon_twitter{background: url(../img/icon_sns_twitter.png) no-repeat;
+            width: 27px;
+            height: 25px;
+            background-size: 27px;}
+.icon_blog{background: url(../img/icon_sns_blog.png) no-repeat;
+            width: 25px;
+            height: 25px;
+            background-size: 25px;}
+.icon_youtube{background: url(../img/icon_sns_youtube.png) no-repeat;
+            width: 29px;
+            height: 25px;
+            background-size: 29px;}
+.icon_insta{background: url(../img/icon_sns_insta.png) no-repeat;
+            width: 25px;
+            height: 25px;
+            background-size: 25px;}
+
+.app{position: absolute; 
+        right: 0;
+        top: 50px;}
+.appstore,.googleplay{color: #fff;
+                        float: left;
+                        width: 110px;
+                        height: 20px;
+                        font-family: 'Noto Sans', sans-serif;
+                        font-size: 16px;}
+
+
+.appstore .icon{background: url(../img/icon_appstore.png) no-repeat;
+            width: 15px;
+            height: 20px;
+            background-size: 15px;
+            float: left;
+            margin-right: 5px;}
+
+.googleplay .icon{background: url(../img/icon_googleplay.png) no-repeat;
+            width: 15px;
+            height: 20px;
+            background-size: 15px;
+            float: left;
+            margin-right: 5px;}
+
+.footer_bottom{font-size: 11px;
+                    color: #fff;
+                    line-height: 16px;}
+.footer_left{margin-top: 20px;
+                font-size: 11px;
+                text-align: left;}
+.footer_right{text-align: right;
+                margin-top: -27px;
+                font-size: 11px;}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monami</title>
+    
+    <link href="css/header_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/media_only_screen.css" rel="stylesheet" type="text/css" />
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <!-- font -->
+    
+    <script src="../jquery-3.4.1.js" type="text/javascript" text="javascript"></script>
+    <script src="script/header_script.js" type="text/javascript" text="javascript"></script>
+    <script src="script/main_script.js" type="text/javascript" text="javascript"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="top_header clearfix">
+                <button class="rang clearfix">
+                    <span>KOR</span>
+                    <div class="icon">
+                        
+                    </div>
+                    <div class="rang_choice">
+                        <div class="rang_ko">
+                            <span>KOR</span>
+                        </div>
+                        <div class="rang_eng">
+                            <span>ENG</span>
+                        </div>
+                    </div>
+                </button>
+                
+                <div class="hamburger" >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                
+                <div id="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="img/monami_logo.png" alt="모나미 로고">
+                        </a>
+                    </h1>
+                </div>
+                
+                <div class="util clearfix">
+                    <div class="login">
+                        <a href="#">
+                            <div class="icon"></div>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <a href="#">
+                            <div class="icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_header">
+                <nav>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">모나미스토리</a>
+                            <ul class="dept2">
+                                <li><a href="#">모나미소개</a></li>
+                                <li><a href="#">히스토리</a></li>
+                                <li><a href="#">CI</a></li>
+                                <li><a href="#">투자정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">모나미제품</a>
+                            <ul class="dept2">
+                                <li><a href="#">펜</a></li>
+                                <li><a href="#">마카</a></li>
+                                <li><a href="#">형광펜</a></li>
+                                <li><a href="#">미술용품</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">문구박물관</a>
+                            <ul class="dept2">
+                                <li><a href="#">문구박물관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="dept2">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">모나미스토어</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header -->
+        
+        <!-- banner -->
+        <div id="banner">
+            <div class="banner_slide clearfix">
+                <div class="banner_smart banner_box">
+                    <div class="smart_back banner_back"></div>
+                    <div class="smart_text banner_text">
+                        <p>모나미 153 스마트펜</p>
+                        <span>작지만 똑똑한 스마트펜</span>
+                        <button>
+                            <a href="#">더 보기</a>
+                        </button>    
+                        
+                    </div>
+                    
+                    <div class="smart_img banner_img">
+                        <img src="img/main_banner_smartpen.png" alt="모나미스마트펜">
+                    </div>
+                    <div class="smart_big_ellip big_ellip"></div>
+                    <div class="smart_small_ellip m_small_ellip"></div>
+                </div>
+                <div class="banner_blossom banner_box">
+                    <div class="blossom_back banner_back"></div>
+                    <div class="blossom_text banner_text">
+                        <p>모나미 153 blossom</p>
+                        <span>모나미 153 프리미엄, 더 좋은 모나미 153</span>
+                        <button>
+                            <a href="#">더 보기</a>
+                        </button>
+                    </div>
+                    
+                    <div class="blossom_img banner_img">
+                        <img src="img/main_banner_blossom.png" alt="모나미 블라썸">
+                    </div>
+                    <div class="blossom_big_ellip big_ellip"></div>
+                    <div class="blossom_small_ellip m_small_ellip"></div>
+                </div>
+                <div class="banner_ink banner_box">
+                    <div class="ink_back banner_back"></div>
+                    <div class="ink_text banner_text">
+                        <p>모나미 병 잉크</p>
+                        <span>다양한 색상을 제공하는 고품질의 만년필 잉크</span>
+                        <button>
+                            <a href="#">더 보기</a>
+                        </button>
+                    </div>
+                    
+                    <div class="ink_img banner_img">
+                        <img src="img/main_banner_ink.png" alt="모나미 잉크">
+                    </div>
+                    <div class="ink_big_ellip big_ellip"></div>
+                    <div class="ink_small_ellip m_small_ellip"></div>
+                </div>
+                <div class="banner_fountain banner_box">
+                    <div class="fountain_back banner_back"></div>
+                    <div class="fountain_text banner_text">
+                        <p>모나미 만년필</p>
+                        <span>모나미 잉크 카트리지 및 병잉크의 다양한 색상 사용 가능</span>
+                        <button>
+                            <a href="#">더 보기</a>
+                        </button>
+                    </div>
+                    
+                    <div class="fountain_img banner_img">
+                        <img src="img/main_banner_fountain.png" alt="모나미 만년필">
+                    </div>
+                    <div class="fountain_big_ellip big_ellip"></div>
+                    <div class="fountain_small_ellip m_small_ellip"></div>
+                </div>
+                <div class="small_ellip">
+                    <div class="slide_btn">
+                        <ul>
+                            <li class="slide_btn_smart slide_btn_tap">스마트펜</li>
+                            <li class="slide_btn_blossom">153 블라썸</li>
+                            <li class="slide_btn_ink">모나미 잉크</li>
+                            <li class="slide_btn_fountain">만년필</li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- banner -->
+        
+        <!-- story -->
+        <div id="story">
+            <p>
+                모나미는 당신의 행복한 기록과 늘<br>
+                함께합니다
+            </p>
+            
+            <div class="story_box clearfix">
+                <div class="friend">
+                    <div class="story_img_box">
+                        <img src="img/main_freind_monami.jpg" alt="friend monami">
+                    </div>
+<!--
+                    <div class="head_text clearfix">
+                        <p>Firend</p>
+                        <p>monami</p>    
+                    </div>
+-->
+                    <div class="body_text">
+                        <p>
+                            고객과 함께하며 고객의 성공을<br>
+                            응원하는 모나미
+                        </p>
+                    </div>
+                </div>
+                <div class="since">
+                    <div class="story_img_box">
+                        <img src="img/main_since1963.jpg" alt="since 1963">
+                    </div>
+<!--
+                    <div class="head_text">
+                        <p>Since</p>
+                        <p>1963</p>    
+                    </div>
+-->
+                    <div class="body_text">
+                        <p>
+                            56년의 역사, 1963년 대한민국<br>
+                            최초의 유성볼펜 제조
+                        </p>
+                    </div>
+                </div>
+                <div class="global">
+                    <div class="story_img_box">
+                        <img src="img/main_no1_global.jpg" alt="global no.1">
+                    </div>
+<!--
+                    <div class="head_text">
+                        <p>Global</p>
+                        <p>No.1</p>    
+                    </div>
+-->
+                    <div class="body_text">
+                        <p>
+                            2020년 전 세계적으로 37억자루 이상<br>
+                            판매된 모나미 볼펜
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- story -->
+        
+        <!-- product -->
+        <div id="product">    
+            <h2>PRODUCT</h2>
+            
+            <button class="more_btn product_more clearfix">
+                <span>MORE</span>
+                <div class="icon"></div>
+            </button>
+            
+            <div class="kategorie">
+                <ul class="clearfix">
+                    <li class="tap">펜</li>
+                    <li>마카</li>
+                    <li>형광펜</li>
+                    <li>기타</li>
+                </ul>
+            </div>
+            
+            <!-- pen -->
+            <div class="product_item product_pen clearfix">
+                <div class="item_smartpen item_box">
+                    <a href="#">
+                        <img src="img/product_monami_smartpen.jpg" alt="153 스마트펜">
+                        <div class="item_text">
+                            <span>프리미엄 펜</span>
+                            <p>153 스마트펜</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_fx153 item_box">
+                    <a href="#">
+                        <img src="img/product_fx153.jpg" alt="FX153">
+                        <div class="item_text">
+                            <span>유성볼펜</span>
+                            <p>FX153</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_fxzeta item_box">
+                    <a href="#">
+                        <img src="img/product_fx_zeta.jpg" alt="FX ZETA">
+                        <div class="item_text">
+                            <span>유성볼펜</span>
+                            <p>FX ZETA</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_line_fountain item_box">
+                    <a href="#">
+                        <img src="img/product_153_line_fountain.jpg" alt="라인 만년필">
+                        <div class="item_text">
+                            <span>만년필</span>
+                            <p>라인 만년필</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_neo_fountain item_box">
+                    <a href="#">
+                        <img src="img/product_153_neo_fountain.jpg" alt="네오 만년필">
+                        <div class="item_text">
+                            <span>만년필</span>
+                            <p>네오 만년필</p>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+            <!-- pen -->
+            <!-- marker -->
+            <div class="product_item product_marker">
+                <div class="item_twin109 item_box">
+                    <a href="#">
+                        <img src="img/product_twin_109.jpg" alt="트윈 109">
+                        <div class="item_text">
+                            <span>유성매직</span>
+                            <p>트윈 109</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_twin_brush item_box">
+                    <a href="#">
+                        <img src="img/product_color_twin_brush.jpg" alt="칼라 트윈 브러쉬">
+                        <div class="item_text">
+                            <span>수성마카</span>
+                            <p>칼라 트윈 브러쉬</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_live_color item_box">
+                    <a href="#">
+                        <img src="img/product_live_color.jpg" alt="라이브칼라">
+                        <div class="item_text">
+                            <span>수성마카</span>
+                            <p>라이브칼라</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_plus_neon item_box">
+                    <a href="#">
+                        <img src="img/product_pluspen_neon.jpg" alt="플러스펜 네온">
+                        <div class="item_text">
+                            <span>수성마카</span>
+                            <p>플러스펜 네온</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_ceramic_marker item_box">
+                    <a href="#">
+                        <img src="img/product_ceramic_marker.jpg" alt="세라믹마카">
+                        <div class="item_text">
+                            <span>세라믹마카</span>
+                            <p>세라믹 마카480</p>
+                        </div>
+                    </a>
+                </div>                
+            </div>
+            <!-- marker -->
+            <!-- highlighter -->
+            <div class="product_item product_highlighter">
+                <div class="item_essenti item_box">
+                    <a href="#">
+                        <img src="img/product_essenti.jpg" alt="에센티">
+                        <div class="item_text">
+                            <span>형광펜</span>
+                            <p>에센티</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_essenti_stick item_box">
+                    <a href="#">
+                        <img src="img/product_essenti_stick.jpg" alt="에센티 스틱">
+                        <div class="item_text">
+                            <span>형광펜</span>
+                            <p>에센티 스틱</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_adding_jumbo item_box">
+                    <a href="#">
+                        <img src="img/product_adding_jumbo_604.jpg" alt="에딩점보 604">
+                        <div class="item_text">
+                            <span>형광펜</span>
+                            <p>에딩점보 604</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_adding_super item_box">
+                    <a href="#">
+                        <img src="img/product_adding_super_600.jpg" alt="에딩슈퍼 600">
+                        <div class="item_text">
+                            <span>형광펜</span>
+                            <p>에딩슈퍼 600</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_memory_s item_box">
+                    <a href="#">
+                        <img src="img/product_memory_s.jpg" alt="메모리s">
+                        <div class="item_text">
+                            <span>형광펜</span>
+                            <p>메모리 S</p>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+            <!-- highlighter -->
+            <!-- etc -->
+            <div class="product_item product_etc">
+                <div class="item_neo_sharp item_box">
+                    <a href="#">
+                        <img src="img/product_153_neo_sharp.jpg" alt="153 네오 홀더 샤프">
+                        <div class="item_text">
+                            <span>샤프</span>
+                            <p>153 네오 홀더 샤프</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_sharp_lead item_box">
+                    <a href="#">
+                        <img src="img/product_sharp_lead.jpg" alt="세라믹 샤프심">
+                        <div class="item_text">
+                            <span>샤프심</span>
+                            <p>세라믹 샤프심</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_pencil item_box">
+                    <a href="#">
+                        <img src="img/product_bauhaus_pencil.jpg" alt="바우하우스 시험 연필">
+                        <div class="item_text">
+                            <span>연필</span>
+                            <p>바우하우스 시험 연필</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_gripix item_box">
+                    <a href="#">
+                        <img src="img/product_gripix_z.jpg" alt="그라픽스 Z">
+                        <div class="item_text">
+                            <span>지우개</span>
+                            <p>그라픽스 Z</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_glue item_box">
+                    <a href="#">
+                        <img src="img/product_glue.jpg" alt="빨리마르는 물풀">
+                        <div class="item_text">
+                            <span>풀</span>
+                            <p>빨리 마르는 물풀</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- etc -->
+        </div>
+        <!-- product -->
+        
+        <!-- promotion_banner -->
+        <div class="promotion_banner">
+            <img src="img/small_banner.jpg" alt="모나미 153 띠 배너">
+        </div>
+        <!-- promotion_banner -->
+        
+        <!-- concept_store -->
+        <div id="concept_store" class="clearfix">
+            <div class="concept_text">
+                <h2>컨셉스토어</h2>
+                <p>모나미와 일상을 함께 해보세요</p>
+            </div>
+            
+            <button class="more_btn concept_more clearfix">
+                <span>MORE</span>
+                <div class="icon"></div>
+            </button>
+            
+            <div class="concept_box clearfix">
+                <div class="store_suzi store_box">
+                    <a href="#" class="clearfix">
+                        <div class="concept_img">
+                            <img src="img/main_concept_suzi.jpg" alt="컨셉스토어 수지점">    
+                        </div>
+                        <p class="store_name">본사 수지점</p>
+                        <p class="store_text">
+                            생활 속 소소한 경험을 통해 자신만의 스토리를<br>
+                            만드는 공간을 제공합니다
+                        </p>
+                    </a>
+                </div>
+                <div class="store_insadong store_box">
+                    <a href="#" class="clearfix">
+                        <div class="concept_img">
+                            <img src="img/main_concept_insadong.jpg" alt="컨셉스토어 인사동점">   
+                        </div>
+                        <p class="store_name">본사 수지점[스토리 연구소]</p>
+                        <p class="store_text">
+                            나만의 개성에 맞는 상품을 적극적으로 만들 수 있는<br>
+                            소통과 체험의 복합공간입니다
+                        </p>
+                    </a>
+                </div>
+                <div class="store_everland store_box">
+                    <a href="#" class="clearfix">
+                        <div class="concept_img">
+                            <img src="img/main_concept_everland.jpg" alt="컨셉스토어 에버랜드점">   
+                        </div>
+                        <p class="store_name">에버랜드[꿈의 공장]</p>
+                        <p class="store_text">
+                            삶의 기록들은 시간이 지나 즐거운 추억이 됩니다.<br>
+                            즐거운 추억의 기록, 그곳에 모나미
+                        </p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- concpet_store -->
+        
+        <!-- story_pick -->
+        <div id="story_pick">
+            <h2>STORY PICK</h2>
+            
+            <button class="more_btn concept_more clearfix">
+                <span>MORE</span>
+                <div class="icon"></div>
+            </button>
+            
+            <div class="story_pick_gallery">
+                <div class="story_pick_1 story_pick_box story_tap">
+                    <div class="story_pick_name">
+                        <span>[M Storyteller]</span>
+                        <p>만년필, 그것이 알고싶다</p>
+                    </div>
+                    <div class="story_pick_text">
+                        <p>
+                            - 깃털에 잉크를 묻혀 사용해 오던 1880년대에는 금속 펜촉은<br>
+                            있었지만 잉크가 펜촉으로 흐르는 지금의 만년필 형태의 필기구는<br>
+                            존재하지 않았습니다...
+                        </p>
+                    </div>
+                    <div class="story_pick_img">
+                        <img src="img/storypick_fountain.jpg" alt="만년필 그것이 알고싶다">
+                    </div>
+                    <div class="story_pick_date">
+                        <span>2020.01.04</span>
+                    </div>
+                </div>
+                <div class="story_pick_2 story_pick_box">
+                    <div class="story_pick_name">
+                        <span>[Inside the case]</span>
+                        <p>필기구 그 이상의 의미</p>
+                    </div>
+                    <div class="story_pick_text">
+                        <p>
+                            - 30대 평범한 직장인이고, 사무직이라 무언 갈 적는 행위가<br>
+                            잦습니다. 그 때문에 스스로 연필과 같은 필기구랑 전 친하다고<br>
+                            생각하는 편...
+                        </p>
+                    </div>
+                    <div class="story_pick_img">
+                        <img src="img/storypick_pluspen.jpg" alt="필기구 그 이상의 의미">
+                    </div>
+                    <div class="story_pick_date">
+                        <span>2019.12.27</span>
+                    </div>
+                </div>
+                <div class="story_pick_3 story_pick_box">
+                    <div class="story_pick_name">
+                        <span>[M Storyteller]</span>
+                        <p>손글씨 레슨 - 모나미의 교정 노트</p>
+                    </div>
+                    <div class="story_pick_text">
+                        <p>
+                            - 키보드나 마우스, 터치, 당기기로 소통하는 시대. 손글씨를<br>
+                            쓸 일은 이전에 비해 크게 줄어들었습니다. 손글씨라는 단어가<br>
+                            특별하게 다가오는 이유가... 
+                        </p>
+                    </div>
+                    <div class="story_pick_img">
+                        <img src="img/storypick_write.jpg" alt="손글씨 레슨">
+                    </div>
+                    <div class="story_pick_date">
+                        <span>2019.12.20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- story_pick -->
+        
+        <!-- footer -->
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <ul class="clearfix">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">고객문의</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                    
+                    <div class="sns clearfix">
+                        <a href="#">
+                            <div class="facebook sns_icon"></div>
+                        </a>
+                        <a href="#">
+                            <div class="insta sns_icon"></div>
+                        </a>
+                        <a href="#">
+                            <div class="youtube sns_icon"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer_bottom clearfix">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="img/monami_grey_logo.png" alt="모나미 로고">
+                        </a>
+                    </div>
+                    <p class="footer_text">
+                        주소 : 경기도 용인시 수지구 손곡로 17     TEL : 031-216-0153<br>
+                        상호명 : (주)모나미     대표자명 :  송하경      고객센터 : 080-022-0153    
+                    </p>  
+                    <div class="family_site">
+                        <select name="family_site" id="">
+                            <option value="">FAMILY SITE</option>
+                            <option value=""><a href="#">모나미</a></option>
+                            <option value=""><a href="#">모나미 스토어</a></option>
+                            <option value=""><a href="#">모나미 컨셉스토어</a></option>
+                            <option value=""><a href="#">모나르떼</a></option>
+                        </select>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    
+</body>
+</html>

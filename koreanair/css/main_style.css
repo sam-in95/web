@@ -1,0 +1,496 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+h2,p,span{font-family: inherit;}
+li{list-style: none;}
+button{cursor: pointer; outline: none; border: none;}
+input{outline: none; color: #222;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+
+#wrap{margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1280px;}
+/* banner */
+#banner{width: 100%;
+            height: 820px;
+            overflow: hidden;
+            position: relative;
+            font-family: 'NanumSquare', sans-serif;}
+.slider{position: relative;}
+
+.imgslide{position: absolute;}
+.imgslide_1{display: block;}
+.imgslide_2{display: none;}
+.imgslide_3{display: none;}
+
+.imgtext span{color: #fff;
+                font-size: 14px;
+                display: block;}
+.imgtext p{color: #fff;
+                font-size: 48px;
+                font-family: 'NanunSquare', sans-serif;
+                font-weight: 400;
+                margin-top: 5px;}
+
+.imgslide_1 img{width: 1920px;
+                margin-top: -130px;}    
+.imgtext{width: 1240px;
+                height: 820px;
+                left: 50%;
+                margin-left: -620px;
+                position: absolute;
+                top: 0;}
+.imgtext_1 span{margin: 230px 0 0 5px;}
+
+.imgslide_2 img{width: 2040px;}
+.imgtext_2{top: 130px;}
+.imgtext_2 span{margin: 0 0 0 5px;}
+
+.imgslide_3 img{width: 1920px;}
+.imgtext_3{top: 200px;}
+.imgtext_3 span{margin: 0 0 0 5px;}
+
+
+
+.slider_btn{position: absolute;
+                top: 500px;
+                left: 50%;
+                margin-left: -22.5px;}
+.slider_btn li{float: left;
+                width: 10px;
+                height: 10px;
+                border-radius: 20px;
+                margin-right: 5px;
+                background-color: #dddd;}
+.slider_btn .now{width: 20px;
+                    height: 10px;
+                    border-radius: 20px;
+                    background-color: #fff;}
+    /* ticket_box*/
+#ticket_box{width: 1240px;
+                height: 220px;
+                background-color: #fff;
+                position: absolute;
+                top: 520px;
+                left: 50%;
+                margin-left: -620px;
+                font-family: 'NanumSquare', sans-serif;}
+.ticket_btn li{width: 412px;
+                    height: 60px;
+                    font-size: 16px;
+                    line-height: 60px;
+                    text-align: center;
+                    font-weight: 400;
+                    border: none;
+                    float: left;
+                    cursor: pointer;
+                    background-color: #dcdcdc;}
+.reserve{margin-right: 2px;}
+
+.check_in{margin-left: 2px;}
+.ticket_btn .tap_on{background-color: #fff;
+                        font-weight: 700;}
+
+    /* ticket_reserve */
+.ticket_reserve{width: 1240px;
+                    height: 160px;
+                    position: absolute;}
+.trip_type{width: 210px;
+            height: 30px;
+            position: absolute;
+            background-color: #dcdcdc;
+            border-radius: 5px;
+            margin-left: 50px;
+            margin-top: 20px;}
+.trip_type li{width: 70px;
+                height: 30px;
+                float: left;
+                font-size: 12px;
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;}
+.trip_type li:nth-child(1){border-radius: 5px 0 0 5px;}
+.trip_type li:nth-child(3){border-radius: 0 5px 5px 0;}
+.click{background-color: #1e3d7d;
+            color: #fff;}
+    
+.trip_info{position: absolute;
+            top: 80px;
+            left: 50px;}
+.trip_info li{float: left;
+                width: 190px;
+                height: 30px;
+                margin-right: 20px;
+                position: relative;
+                border-bottom: 2px solid #999;}
+.trip_info input{background: none;
+                    border: none;
+                    width: 170px;
+                    height: 25px;
+                    bottom: 5px;}
+.trip_start .icon{background: url(../img/icon_ticket_pin_focus.png) no-repeat;
+    width: 30px;
+    height: 30px;
+                right: -5px;
+                bottom: 5px;
+                position: absolute;}
+.trip_arrival .icon{background: url(../img/icon_ticket_pin_focus.png) no-repeat;
+    width: 30px;
+    height: 30px;
+                right: -5px;
+                bottom: 5px;
+                position: absolute;}
+.trip_date .icon{background: url(../img/icon_ticket_calendar_focus.png) no-repeat;
+    width: 30px;
+    height: 30px;
+                right: -3px;
+                bottom: 5px;
+                position: absolute;}
+.trip_person .icon{background: url(../img/icon_ticket_people_focus.png) no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+                right: -2px;
+                bottom: 5px;
+                position: absolute;}
+.trip_seat .icon{background: url(../img/icon_ticket_couch_focus.png) no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+                right: -1px;
+                bottom: 5px;
+                position: absolute;}
+
+.trip_search_btn{width: 70px;
+                    height: 35px;
+                    border-radius: 5px;
+                    position: absolute;
+                    background-color: #1e3d7d;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 35px;
+                    text-align: center;    
+                    top: 77px;
+                    left: 1110px;}
+    /* ticket_reserve */
+    /* ticket_re_check */
+.ticket_re_check{width: 1240px;
+                    height: 160px;
+                    position: absolute;
+                    display: none;}
+.ticket_search{position: absolute;
+                    top: 80px;
+                    left: 50px;}
+.ticket_search li{float: left;
+                    width: 190px;
+                    height: 30px;
+                    margin-right: 20px;
+                    position: relative;
+                    border-bottom: 2px solid #999;}
+.ticket_search input{background: none;
+                        border: none;
+                        width: 190px;
+                        height: 25px;
+                        bottom: 5px;}
+.reserv_num_ex{position: absolute;
+                top: -45px;
+                left: 0;
+                font-size: 13px;
+                color: #888;}
+.ticket_search_btn{width: 70px;
+                    height: 35px;
+                    border-radius: 5px;
+                    position: absolute;
+                    background-color: #1e3d7d;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 35px;
+                    text-align: center;    
+                    top: 77px;
+                    left: 1110px;}
+    /* ticket_re_check*/
+    /* check_in*/
+.check_in_box{width: 1240px;
+                    height: 160px;
+                    position: absolute;
+                    display: none;}
+.check_in_search{position: absolute;
+                    top: 80px;
+                    left: 50px;}
+.check_in_search li{float: left;
+                    width: 190px;
+                    height: 30px;
+                    margin-right: 20px;
+                    position: relative;
+                    border-bottom: 2px solid #999;}
+.check_in_search input{background: none;
+                        border: none;
+                        width: 190px;
+                        height: 25px;
+                        bottom: 5px;}
+    /* check_in*/
+/* banner */
+
+/* first_ko */
+#first_ko{position: relative;
+                margin-top: 150px;
+                width: 100%;
+                min-width: 1240px;
+                height: 620px;
+                overflow: hidden;}
+h2{font-weight: 300;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;}
+.color{width: 50%;
+        height: 400px;
+        background-color: #1e3d7d;
+        position: absolute;
+        margin-top: 65px;
+        left: 0;}
+
+.first_ko_con{width: 1600px;
+                margin: 0 auto;
+                position: relative;}
+.color_back{width: 980px;
+                height: 400px;
+                background-color: #1e3d7d;
+                margin-top: 65px;
+                left: 0;
+                position: relative;}
+.first_ko_text{width: 330px;
+                height: 230px;
+                position: absolute;
+                margin-top: 80px;
+                margin-left: 315px;}
+.first_ko_text p{font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #e0c799;}
+.first_ko_text span{font-size: 22px;
+                        color: #fff;
+                        line-height: 28px;
+                        letter-spacing: 0.5px;
+                        display: block;
+                        margin-top: 60px;
+                        font-family: 'NanumSquare', sans-serif;}
+
+.ko_story_text{position: absolute;
+                top: 0;
+                display: none;}
+.ko_global_text{position: absolute;
+                    top: 0;
+                    display: none;}
+.view_more{font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color: #fff;
+                position: absolute;
+                margin-top: 302px;
+                margin-left: 315px;
+                background: none;
+                border: none;
+                line-height: 25px;
+                height: 25px;
+                z-index: 2;}
+.veiw_more a{display: block;
+                margin: auto;
+                width: 90px;
+                padding: 2px 0px;
+                position: relative;
+                transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+                z-index: 1;}
+.view_more a:after{content: "";
+                    display: block;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 2px;
+                    left: 2px;
+                    background-color: #fff;
+                    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+                    transform-origin: bottom center;
+                    z-index: -1;}
+.view_more a:hover{color: #fff;}
+.view_more a:hover:after{right: -20px;
+                            left: -20px;
+                            background-color: #1e3d7d;
+                            border: 1px solid #fff;
+                            height: 100%;}
+
+.next_prev{position: absolute;
+                top: 295px;
+                left: 650px;}
+.next_prev button{width: 30px;
+                    height: 30px;
+                    border: none;}
+.prev{background: url(../img/icon_con_prev.png) no-repeat;
+        background-size: 40px;
+        background-position: }
+.next{background: url(../img/icon_con_next.png) no-repeat;
+        background-size: 40px;}
+
+.first_ko_slide{position: absolute;
+                    top: 105px;
+                    right: 0px;
+                    width: 860px;
+                    height: 400px;
+                    overflow: hidden;}
+.first_ko_slide_img{position: relative;}
+.first_ko_img{width: 400px;
+                height: 400px;
+                float: left;
+                position: absolute;
+                margin-right: 30px;
+                overflow: hidden;}
+.ko_now{left: 0;}
+.ko_next{left: 430px;}
+.ko_nnext{left: 860px;}
+
+
+.ko_service img{width: 600px;
+                    margin-left: -30px;}
+.ko_story img{width: 640px;
+                    margin-left: -30px;}
+.ko_global img{width: 640px;
+                    margin-left: -120px;}
+
+
+/* first_ko */
+
+/* favortie */
+#favobox{width: 100%;
+            height: 885px;
+            
+            font-family: 'NanumSquare', sans-serif;}
+#favorite{position: relative;
+            top: 150px;
+            width: 1240px;
+            margin: 0 auto;
+            margin-top: 110px;}
+
+.favo_ticket{margin-top: 70px;
+                height: 680px;} /* 문제 */
+.milano{width: 820px;
+            height: 350px;
+            float: left;
+            margin-bottom: 20px;}
+.milano img{width: 832px;
+                margin-top: -50px;}
+.favo_ticket_R{float: right;}
+.favo_ticket_R li:first-child{margin-bottom: 20px;}
+.favo_ticket_L{position: absolute;
+                margin-top: 370px;}
+.favo_ticket_L li{float: left;}
+.favo_ticket_L li:first-child{margin-right: 20px;}
+
+.favo_city{position: relative;
+            overflow: hidden;}
+.favo_city:hover .favo_text{display: none;}
+.favo_city:hover img{width: 120%;
+                        transition: 0.3s;}
+.milano:hover img{margin-left: -10%;}
+.newyork:hover img{margin-left: -10%;}
+.paris:hover img{margin-left: -10%;}
+.zagreb:hover img{width: 800px;
+                    transition: 0.3s;}
+
+.newyork{width: 400px;
+            height: 250px;}
+.newyork img{width: 432px;}
+.london{width: 400px;
+            height: 250px;}
+.london img{width: 461px;}
+.paris{width: 400px;
+            height: 250px;}
+.paris img{width: 450px;}
+.zagreb{width: 400px;
+            height: 350px;}
+.zagreb img{width: 711px;}
+
+.favo_text{position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            font-family: 'NanumSquare', sans-serif;}
+.favo_text span{font-size: 18px;
+                    line-height: 30px;}
+.favo_text p{font-size: 24px;
+                font-weight: 800;}
+/* favortie */
+
+/* skypass_banner */
+#skypass_banner{position: relative;
+                    width: 100%;
+                    height: 460px;
+                    background-color: #1e3d7d;
+                    margin-top: 100px;}
+
+#skypass_banner h2{font-weight: 300;
+                        font-size: 40px;
+                        text-align: center;
+                        padding-top: 70px;
+                        color: #e0c799;}
+
+.skypass_icon{width: 900px;
+                height: 150px;
+                margin: 0 auto;
+                margin-top: 50px;}
+.skypass_icon li{float: left;
+                    width: 298px;
+                    overflow: hidden;
+                    border-right: 1px solid #345089;
+                    border-left: 1px solid #345089;}
+.skypass_icon .icon{margin: 0 auto;
+                        padding-bottom: 15px;}
+.icon_gift .icon{background: url(../img/icon_skypass_gift.png) no-repeat;
+                    width: 100px;
+                    height: 90px;
+                    background-size: 100px;}
+.icon_hotel .icon{background: url(../img/icon_skypass_hotel.png) no-repeat;
+                    width: 120px;
+                    height: 90px;
+                    background-size: 120px;
+                    background-position: 0 -14px;}
+.icon_coin .icon{background: url(../img/icon_skypass_coin.png) no-repeat;
+                    width: 100px;
+                    height: 85px;
+                    background-size: 90px;}
+.skypass_icon p{font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    width: 150px;
+                    color: #e0c799;
+                    display: block;
+                    margin: 0 auto;
+                    font-family: 'NanumSquare', sans-serif;}
+
+.skypass_join{width: 190px;
+                height: 40px;
+                background: none;
+                border: 1px solid #e0c799;
+                color: #e0c799;
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                margin-left: -95px;
+                transition: 0.3s;
+                overflow: hidden;
+                z-index: 1;}
+.skypass_join:hover{color: #000;}
+.skypass_join:after{position: absolute;
+                        transition: 0.3s;
+                        content: '';
+                        width: 0;
+                        background: #e0c799;
+                        height: 300%;
+                        bottom: 0px;
+                        left: -10%;
+                        transform: skewX(15deg);
+                        z-index: -1;}
+.skypass_join:hover:after{width: 130%;}
+
+/* skypass_banner */

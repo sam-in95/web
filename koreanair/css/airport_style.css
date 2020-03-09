@@ -1,0 +1,209 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+h2,p,span{font-family: inherit;}
+li{list-style: none;}
+button{cursor: pointer; outline: none; border: none;}
+input{outline: none; color: #222;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+#wrap{margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1280px;}
+/* sub_banner */
+#sub_banner{width: 100%;
+                max-width: 1920px;
+                min-width: 1240px;
+                height: 500px;
+                overflow: hidden;
+                position: relative;
+                margin: 0 auto;}
+.black{width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0;}
+
+#sub_banner img{width: 1920px;
+                    margin-top: -350px;}
+.sub_banner_text_wrap{width: 1240px;
+                        height: 500px;
+                        top: 0;
+                        left: 50%;
+                        margin-left: -640px;
+                        position: absolute;}
+.sub_banner_text{position: absolute;
+                    top: 140px;
+                    left: 40px;
+                    color: #fff;
+                    font-family: 'NanumSquare', sans-serif;}
+.sub_banner_text h2{font-size: 48px;
+    font-weight: bold;}
+.sub_banner_text span{font-size: 15px;
+                        display: block;
+                        margin-top: 10px;
+                        margin-left: 5px;}
+
+#sub_menu_wrap{width: 100%;
+                    height: 50px;
+                    border-bottom: 1px solid #9f9f9f;}
+.sub_menu{width: 1240px;
+                height: 50px;
+                margin: 0 auto;}
+.sub_menu > div{float: left;}
+.home{width: 60px;
+        height: 50px;
+        border-left: 1px solid #9f9f9f;
+        float: left;
+        background: url(../img/icon_home.png) no-repeat;}
+.first_menu{width: 240px;
+                height: 50px;
+                border-left: 1px solid #9f9f9f;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 15px;
+                color: #9f9f9f;
+                line-height: 50px;
+                position: relative;}
+.first_menu a{margin-left: 20px;
+                float: left;}
+.sub_dept2{position: absolute;
+                top: 50px;
+                font-size: 13px;
+                z-index: 2;
+                left: -1px;
+                border: 1px solid #9f9f9f;
+                border-top: none;}
+.sub_dept2 li{width: 240px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #fff;
+                color: #222;
+                display: none;}
+.sub_dept2 li:first-child{border-top: 1px solid #9f9f9f;}
+.sub_dept2 li:hover{background-color: #f8f8f8;
+                        color: #1e3d7d;
+                        font-weight: bold;}
+.second_menu,.third_menu{width: 240px;
+                height: 50px;
+                border-left: 1px solid #9f9f9f;
+                border-right: 1px solid #9f9f9f;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 15px;
+                color: #9f9f9f;
+                line-height: 50px;
+                position: relative;}
+.third_menu{border-left: none;}
+.second_menu a,.third_menu a{margin-left: 20px;
+                                float: left;}
+.arrow{background: url(../img/icon_bottom_arrow.png) no-repeat;
+            background-size: 10px;
+            width: 20px;
+            height: 20px;
+            margin-left: 210px;
+            margin-top: 23px;}
+/* sub_banner */
+
+/* airport_info */
+#airport_info{width: 1240px;
+                margin: 0 auto;
+                margin-top: 50px;
+                font-family: 'NanumSquare', sans-serif;}
+.airport_info_title{font-size: 42px;
+                        font-weight: 300;
+                        text-align: center;}
+.airport_search{margin: 0 auto;
+                    margin-top: 40px;
+                    width: 492px;}
+.airport_search form{float: left;}
+.airport_search input{width: 400px;
+                        height: 40px;
+                        background-color: #f3f3f3;
+                        border: 1px solid #c8c8c8;
+                        font-size: 18px;
+                        text-indent: 20px;
+                        color: #222;}
+.airport_search input::placeholder{color: #ddd;}
+
+.airport_search button{width: 80px;
+                            height: 40px;
+                            background-color: #1e3d7d;
+                            border-radius: 5px;
+                            color: #fff;
+                            font-size: 15px;
+                            font-family: 'Nanum Gothic', sans-serif;
+                            text-align: center;
+                            line-height: 40px;
+                            margin-left: 10px;}
+
+.search_text p{font-size: 23px;
+                    margin-top: 30px;
+                    text-align: center;}
+
+.search_info{width: 1240px;
+                margin: 0 auto;
+                margin-top: 50px;}
+.info_tap li{float: left;
+                width: 310px;
+                height: 60px;
+                text-align: center;
+                font-size: 18px;
+                line-height: 60px;
+                color: #222;
+                background-color: #f3f3f3;
+                box-sizing: border-box;
+                border: 1px solid #dcdcdc;
+                border-bottom: 2px solid #1e3d7d;}
+.info_tap li.tap{background-color: #fff;
+                    border: 2px solid #1e3d7d;
+                    border-bottom: none;
+                    color: #000;
+                    font-weight: 700;}
+
+.info_box{border-bottom: 1px solid #dcdcdc;}
+.info_box.last_box{border-bottom: 2px solid #1e3d7d;}
+.info_head{float: left;
+                width: 310px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;}
+
+.airport_nomal{display: block;}
+.airport_nomal li{height: 100px;
+                    line-height: 100px;
+                    color: #222;}
+.info_head{font-size: 22px;}
+.info_body{font-size: 16px;}
+
+.check_in_info{display: none;}
+.check_in_info li{height: 100px;
+                    line-height: 100px;
+                    color: #222;}
+.check_in_counter .info_head,
+.check_in_counter .info_body{height: 260px;
+                                position: relative;}
+.check_in_counter p:nth-child(1){line-height: 24px;}
+.check_in_counter p:nth-child(2){line-height: 24px;
+                                    position: absolute;
+                                    top: 100px;
+                                    left: 550px;}
+
+.lounge{display: none;}
+.lounge li{height: 200px;
+            line-height: 100px;}
+.lounge_com{height: 100px;}
+.lounge .info_body{line-height: 100px;}
+.lounge .info_body p{padding-top: 40px;
+                        line-height: 24px;}
+
+.transfer{display: none;}
+.transfer p{padding-top: 40px;
+                line-height: 24px;}
+.transfer_1 li{height: 780px;}
+
+.transfer_2 li{height: 280px;}
+
+.transfer_3 li{height: 180px;}
+.transfer_3 p{padding-top: 25px;}
+/* airport_info */
+
+

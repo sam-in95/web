@@ -104,7 +104,7 @@ $(function(){
         
         
 
-    },2000);
+    },5000);
     if($(window).width() < 1023){
             clearInterval(autoSlide);
             $(".banner_box").css({"opacity":"1"});

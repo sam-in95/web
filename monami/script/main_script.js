@@ -46,8 +46,8 @@ $(function(){
         $(".banner_box").eq(index).css({"opacity":"1"});
         $(".banner_back").eq(index).css({"opacity":"1"});
         $(".big_ellip").eq(index).css({"opacity":"1"});
-        $(".banner_text").eq(index).css({"opacity":"1"}).animate({left:"0"},500);
-        $(".banner_img").eq(index).css({"opacity":"1"}).animate({left:"950px"},800);
+        $(".banner_text").eq(index).css({"opacity":"1"}).animate({left:"22%"},500);
+        $(".banner_img").eq(index).css({"opacity":"1"}).animate({left:"55%"},800);
         
         if(index == 0){
             $(".small_ellip").css({"background-color":"#ffbd35"});   

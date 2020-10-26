@@ -11,11 +11,11 @@ footer{width: 100%;
         margin-top: 60px;
         position: relative;
         font-family: 'Nanum Gothic', sans-serif;}
-.footer_wrap{width: 1240px;
+.footer_wrap{width: 1280px;
                 height: 230px;
                 padding-top: 60px;
                 margin: 0 auto;}
-.footer_top{width: 1240px;
+.footer_top{width: 1280px;
                 height: 180px;
                 position: relative;
                 border-bottom: 1px solid #7baad2;}
@@ -29,7 +29,7 @@ footer{width: 100%;
 
 .footer_menu{display: block;
                 width: 630px;
-                margin-left: 280px;}
+                margin-left: 310px;}
 .footer_menu ul{float: left;
                     font-size: 15px;
                     line-height: 34px;

@@ -41,22 +41,26 @@ $(function(){
         $(".banner_back").css({"opacity":"0"});
         $(".big_ellip").css({"opacity":"0"});
         $(".banner_text").css({"opacity":"0","left":"-1500px"},1500);
-        $(".banner_img").css({"opacity":"0","left":"1500px"},1500);
+        $(".banner_img").css({"opacity":"0","left":"2000px"},1500);
         
         $(".banner_box").eq(index).css({"opacity":"1"});
         $(".banner_back").eq(index).css({"opacity":"1"});
         $(".big_ellip").eq(index).css({"opacity":"1"});
-        $(".banner_text").eq(index).css({"opacity":"1"}).animate({left:"22%"},500);
-        $(".banner_img").eq(index).css({"opacity":"1"}).animate({left:"55%"},800);
+        $(".banner_text").eq(index).css({"opacity":"1"}).animate({left:"450px"},500);
+        $(".banner_img").eq(index).css({"opacity":"1"});
         
         if(index == 0){
-            $(".small_ellip").css({"background-color":"#ffbd35"});   
+            $(".small_ellip").css({"background-color":"#ffbd35"}); 
+            $(".banner_img").eq(index).animate({left:"860px"},600);
         }else if(index == 1){
             $(".small_ellip").css({"background-color":"#c3c5e7"});
+            $(".banner_img").eq(index).animate({left:"753px"},600);
         }else if(index == 2){
-            $(".small_ellip").css({"background-color":"#efdcde"});    
+            $(".small_ellip").css({"background-color":"#efdcde"});
+            $(".banner_img").eq(index).animate({left:"806px"},600);
         }else if(index == 3){
             $(".small_ellip").css({"background-color":"#d2d2d2"});
+            $(".banner_img").eq(index).animate({left:"880px"},600);
         }
     });
     
@@ -80,22 +84,26 @@ $(function(){
         $(".banner_back").css({"opacity":"0"});
         $(".big_ellip").css({"opacity":"0"});
         $(".banner_text").css({"opacity":"0","left":"-1500px"},1500);
-        $(".banner_img").css({"opacity":"0","left":"1500px"},1500);
+        $(".banner_img").css({"opacity":"0","left":"2000px"},1500);
         
         $(".banner_box").eq(currentIndex).css({"opacity":"1"});
         $(".banner_back").eq(currentIndex).css({"opacity":"1"});
         $(".big_ellip").eq(currentIndex).css({"opacity":"1"});
-        $(".banner_text").eq(currentIndex).css({"opacity":"1"}).animate({left:"22%"},500);
-        $(".banner_img").eq(currentIndex).css({"opacity":"1"}).animate({left:"55%"},800);
+        $(".banner_text").eq(currentIndex).css({"opacity":"1"}).animate({left:"450px"},500);
+        $(".banner_img").eq(currentIndex).css({"opacity":"1"});
         
         if(currentIndex == 0){
-            $(".small_ellip").css({"background-color":"#ffbd35"});   
+            $(".small_ellip").css({"background-color":"#ffbd35"});
+            $(".banner_img").animate({left:"860px"},600);
         }else if(currentIndex == 1){
             $(".small_ellip").css({"background-color":"#c3c5e7"});
+            $(".banner_img").animate({left:"753px"},600);
         }else if(currentIndex == 2){
-            $(".small_ellip").css({"background-color":"#efdcde"});    
+            $(".small_ellip").css({"background-color":"#efdcde"});
+            $(".banner_img").animate({left:"806px"},600);
         }else if(currentIndex == 3){
             $(".small_ellip").css({"background-color":"#d2d2d2"});
+            $(".banner_img").animate({left:"880px"},600);
         }
         
         slideBtn.click(function(){

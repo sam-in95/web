@@ -27,19 +27,18 @@
                 min-width: 100%;
                 overflow: hidden;}
     header{width: 100%;
-                height: 50px;
-                border-bottom: 1px solid #222;}
+                height: 43px;
+                border-bottom: 1px solid #e3e3e3;}
     .rang{display: none;}
-    .hamburger{display: block;}
-    #logo{width: 71px;
-            height: 17px;
+    .hamburger{display: none;}
+    #logo{width: 120px;
             padding-top: 0;}
-    #logo img{width: 71px;}
+    #logo img{width: 120px;}
     .util,.nav_header{display: none;}
     
     #banner{width: 100%;
                 max-width: 767px;
-                height: 600px;
+                height: 580px;
                 overflow: hidden;}
     .banner_box{width: 100%;
                     height: 600px;
@@ -64,7 +63,8 @@
                         position: absolute;
                         top: 60%;}
     .banner_img{top: 25%;
-                    left: 15%;}
+                    left: 15%;
+                    position: absolute;}
     .smart_img img{width: 50vw;}
     .banner_smart{display: block;}
         .banner_blossom{opacity: 1;}

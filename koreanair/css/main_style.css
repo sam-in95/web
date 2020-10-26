@@ -30,12 +30,12 @@ input{outline: none; color: #222;}
 .imgtext p{color: #fff;
                 font-size: 48px;
                 font-family: 'NanunSquare', sans-serif;
-                font-weight: 400;
+                font-weight: 900;
                 margin-top: 5px;}
 
 .imgslide_1 img{width: 1920px;
                 margin-top: -130px;}    
-.imgtext{width: 1240px;
+.imgtext{width: 1280px;
                 height: 820px;
                 left: 50%;
                 margin-left: -620px;
@@ -68,15 +68,15 @@ input{outline: none; color: #222;}
                     border-radius: 20px;
                     background-color: #fff;}
     /* ticket_box*/
-#ticket_box{width: 1240px;
+#ticket_box{width: 1280px;
                 height: 220px;
                 background-color: #fff;
                 position: absolute;
                 top: 520px;
                 left: 50%;
-                margin-left: -620px;
+                margin-left: -640px;
                 font-family: 'NanumSquare', sans-serif;}
-.ticket_btn li{width: 412px;
+.ticket_btn li{width: 426px;
                     height: 60px;
                     font-size: 16px;
                     line-height: 60px;
@@ -86,14 +86,14 @@ input{outline: none; color: #222;}
                     float: left;
                     cursor: pointer;
                     background-color: #dcdcdc;}
-.reserve{margin-right: 2px;}
+.reserve{margin-right: 1px;}
 
-.check_in{margin-left: 2px;}
+.check_in{margin-left: 1px;}
 .ticket_btn .tap_on{background-color: #fff;
                         font-weight: 700;}
 
     /* ticket_reserve */
-.ticket_reserve{width: 1240px;
+.ticket_reserve{width: 1280px;
                     height: 160px;
                     position: absolute;}
 .trip_type{width: 210px;
@@ -101,7 +101,7 @@ input{outline: none; color: #222;}
             position: absolute;
             background-color: #dcdcdc;
             border-radius: 5px;
-            margin-left: 50px;
+            margin-left: 70px;
             margin-top: 20px;}
 .trip_type li{width: 70px;
                 height: 30px;
@@ -117,9 +117,9 @@ input{outline: none; color: #222;}
     
 .trip_info{position: absolute;
             top: 80px;
-            left: 50px;}
+            left: 70px;}
 .trip_info li{float: left;
-                width: 190px;
+                width: 192px;
                 height: 30px;
                 margin-right: 20px;
                 position: relative;
@@ -128,37 +128,38 @@ input{outline: none; color: #222;}
                     border: none;
                     width: 170px;
                     height: 25px;
-                    bottom: 5px;}
+                    bottom: 5px;
+                    margin-left: 10px;}
 .trip_start .icon{background: url(../img/icon_ticket_pin_focus.png) no-repeat;
     width: 30px;
     height: 30px;
-                right: -5px;
+                right: 0px;
                 bottom: 5px;
                 position: absolute;}
 .trip_arrival .icon{background: url(../img/icon_ticket_pin_focus.png) no-repeat;
     width: 30px;
     height: 30px;
-                right: -5px;
+                right: 0px;
                 bottom: 5px;
                 position: absolute;}
 .trip_date .icon{background: url(../img/icon_ticket_calendar_focus.png) no-repeat;
     width: 30px;
     height: 30px;
-                right: -3px;
+                right: 0px;
                 bottom: 5px;
                 position: absolute;}
 .trip_person .icon{background: url(../img/icon_ticket_people_focus.png) no-repeat;
     background-size: 30px;
     width: 30px;
     height: 30px;
-                right: -2px;
+                right: 0px;
                 bottom: 5px;
                 position: absolute;}
 .trip_seat .icon{background: url(../img/icon_ticket_couch_focus.png) no-repeat;
     background-size: 30px;
     width: 30px;
     height: 30px;
-                right: -1px;
+                right: 0px;
                 bottom: 5px;
                 position: absolute;}
 
@@ -169,22 +170,22 @@ input{outline: none; color: #222;}
                     background-color: #1e3d7d;
                     border: none;
                     color: #fff;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 35px;
                     text-align: center;    
                     top: 77px;
-                    left: 1110px;}
+                    left: 1140px;}
     /* ticket_reserve */
     /* ticket_re_check */
-.ticket_re_check{width: 1240px;
+.ticket_re_check{width: 1280px;
                     height: 160px;
                     position: absolute;
                     display: none;}
 .ticket_search{position: absolute;
                     top: 80px;
-                    left: 50px;}
+                    left: 70px;}
 .ticket_search li{float: left;
-                    width: 190px;
+                    width: 192px;
                     height: 30px;
                     margin-right: 20px;
                     position: relative;
@@ -193,7 +194,8 @@ input{outline: none; color: #222;}
                         border: none;
                         width: 190px;
                         height: 25px;
-                        bottom: 5px;}
+                        bottom: 5px;
+                        margin-left: 10px;}
 .reserv_num_ex{position: absolute;
                 top: -45px;
                 left: 0;
@@ -206,22 +208,22 @@ input{outline: none; color: #222;}
                     background-color: #1e3d7d;
                     border: none;
                     color: #fff;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 35px;
                     text-align: center;    
                     top: 77px;
-                    left: 1110px;}
+                    left: 1140px;}
     /* ticket_re_check*/
     /* check_in*/
-.check_in_box{width: 1240px;
+.check_in_box{width: 1280px;
                     height: 160px;
                     position: absolute;
                     display: none;}
 .check_in_search{position: absolute;
                     top: 80px;
-                    left: 50px;}
+                    left: 70px;}
 .check_in_search li{float: left;
-                    width: 190px;
+                    width: 192px;
                     height: 30px;
                     margin-right: 20px;
                     position: relative;
@@ -230,7 +232,8 @@ input{outline: none; color: #222;}
                         border: none;
                         width: 190px;
                         height: 25px;
-                        bottom: 5px;}
+                        bottom: 5px;
+                        margin-left: 10px;}
     /* check_in*/
 /* banner */
 
@@ -238,8 +241,8 @@ input{outline: none; color: #222;}
 #first_ko{position: relative;
                 margin-top: 150px;
                 width: 100%;
-                min-width: 1240px;
-                height: 620px;
+                max-width: 1980px;
+                height: 640px;
                 overflow: hidden;}
 h2{font-weight: 300;
         font-size: 40px;
@@ -255,17 +258,17 @@ h2{font-weight: 300;
 .first_ko_con{width: 1600px;
                 margin: 0 auto;
                 position: relative;}
-.color_back{width: 980px;
+.color_back{width: 840px;
                 height: 400px;
                 background-color: #1e3d7d;
                 margin-top: 65px;
-                left: 0;
+                left: 160px;
                 position: relative;}
 .first_ko_text{width: 330px;
                 height: 230px;
                 position: absolute;
                 margin-top: 80px;
-                margin-left: 315px;}
+                margin-left: 180px;}
 .first_ko_text p{font-family: 'Roboto', sans-serif;
                     font-size: 16px;
                     color: #e0c799;}
@@ -289,7 +292,7 @@ h2{font-weight: 300;
                 color: #fff;
                 position: absolute;
                 margin-top: 302px;
-                margin-left: 315px;
+                margin-left: 180px;
                 background: none;
                 border: none;
                 line-height: 25px;
@@ -314,15 +317,15 @@ h2{font-weight: 300;
                     transform-origin: bottom center;
                     z-index: -1;}
 .view_more a:hover{color: #fff;}
-.view_more a:hover:after{right: -20px;
-                            left: -20px;
+.view_more a:hover:after{right: -8px;
+                            left: -8px;
                             background-color: #1e3d7d;
                             border: 1px solid #fff;
-                            height: 100%;}
+                            height: 23px;}
 
 .next_prev{position: absolute;
                 top: 295px;
-                left: 650px;}
+                left: 550px;}
 .next_prev button{width: 30px;
                     height: 30px;
                     border: none;}
@@ -334,27 +337,29 @@ h2{font-weight: 300;
 
 .first_ko_slide{position: absolute;
                     top: 105px;
-                    right: 0px;
-                    width: 860px;
-                    height: 400px;
+                    left: 800px;
+                    width: 880px;
+                    height: 420px;
                     overflow: hidden;}
-.first_ko_slide_img{position: relative;}
-.first_ko_img{width: 400px;
-                height: 400px;
+.first_ko_slide_img{position: relative;
+                        width: 880px;
+                        height: 420px;}
+.first_ko_img{width: 420px;
+                height: 420px;
                 float: left;
                 position: absolute;
-                margin-right: 30px;
                 overflow: hidden;}
 .ko_now{left: 0;}
-.ko_next{left: 430px;}
-.ko_nnext{left: 860px;}
+.ko_next{left: 460px;}
+.ko_nnext{left: 880px;}
 
 
-.ko_service img{width: 600px;
-                    margin-left: -30px;}
+.ko_service img{width: 629px;
+                    margin-left: -30px;
+                    height: 420px;}
 .ko_story img{width: 640px;
                     margin-left: -30px;}
-.ko_global img{width: 640px;
+.ko_global img{width: 659px;
                     margin-left: -120px;}
 
 
@@ -362,29 +367,28 @@ h2{font-weight: 300;
 
 /* favortie */
 #favobox{width: 100%;
-            height: 885px;
+            height: 905px;
             
             font-family: 'NanumSquare', sans-serif;}
 #favorite{position: relative;
             top: 150px;
-            width: 1240px;
-            margin: 0 auto;
-            margin-top: 110px;}
+            width: 1280px;
+            margin: 0 auto;}
 
 .favo_ticket{margin-top: 70px;
                 height: 680px;} /* 문제 */
-.milano{width: 820px;
+.milano{width: 840px;
             height: 350px;
             float: left;
             margin-bottom: 20px;}
-.milano img{width: 832px;
+.milano img{width: 840px;
                 margin-top: -50px;}
 .favo_ticket_R{float: right;}
-.favo_ticket_R li:first-child{margin-bottom: 20px;}
+.favo_ticket_R li:first-child{margin-bottom: 40px;}
 .favo_ticket_L{position: absolute;
-                margin-top: 370px;}
+                margin-top: 390px;}
 .favo_ticket_L li{float: left;}
-.favo_ticket_L li:first-child{margin-right: 20px;}
+.favo_ticket_L li:first-child{margin-right: 40px;}
 
 .favo_city{position: relative;
             overflow: hidden;}
@@ -434,15 +438,17 @@ h2{font-weight: 300;
                         padding-top: 70px;
                         color: #e0c799;}
 
-.skypass_icon{width: 900px;
+.skypass_icon{width: 927px;
                 height: 150px;
                 margin: 0 auto;
                 margin-top: 50px;}
 .skypass_icon li{float: left;
-                    width: 298px;
+                    width: 307px;
                     overflow: hidden;
                     border-right: 1px solid #345089;
-                    border-left: 1px solid #345089;}
+                    border-left: 1px solid #345089;
+/*                  box-shadow: 0 0 0 1px #345089 inset;*/}
+
 .skypass_icon .icon{margin: 0 auto;
                         padding-bottom: 15px;}
 .icon_gift .icon{background: url(../img/icon_skypass_gift.png) no-repeat;
@@ -456,7 +462,7 @@ h2{font-weight: 300;
                     background-position: 0 -14px;}
 .icon_coin .icon{background: url(../img/icon_skypass_coin.png) no-repeat;
                     width: 100px;
-                    height: 85px;
+                    height: 90px;
                     background-size: 90px;}
 .skypass_icon p{font-size: 16px;
                     line-height: 20px;

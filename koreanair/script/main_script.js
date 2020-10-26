@@ -79,9 +79,9 @@ $(function(){
     //first_ko
      currentIndex = 0;
     $(".next").click(function(){
-        $(".ko_now").stop().hide().animate({left:"860px"}).addClass("ko_1").removeClass("ko_now");
+        $(".ko_now").stop().hide().animate({left:"880px"}).addClass("ko_1").removeClass("ko_now");
         $(".ko_next").stop().animate({left:"0px"}).addClass("ko_2").removeClass("ko_next");
-        $(".ko_nnext").stop().show().animate({left:"430px"}).addClass("ko_3").removeClass("ko_nnext");
+        $(".ko_nnext").stop().show().animate({left:"460px"}).addClass("ko_3").removeClass("ko_nnext");
         
         $(".ko_1").removeClass("ko_1").addClass("ko_nnext");
         $(".ko_2").removeClass("ko_2").addClass("ko_now");
@@ -99,9 +99,9 @@ $(function(){
         
     });
     $(".prev").click(function(){
-        $(".ko_now").stop().animate({left:"430px"}).addClass("ko_1").removeClass("ko_now");
-        $(".ko_next").stop().animate({left:"860px"}).addClass("ko_2").removeClass("ko_next");
-        $(".ko_nnext").stop().animate({left:"0"}).addClass("ko_3").removeClass("ko_nnext");
+        $(".ko_now").stop().animate({left:"460px"}).addClass("ko_1").removeClass("ko_now");
+        $(".ko_next").stop().animate({left:"880px"}).addClass("ko_2").removeClass("ko_next");
+        $(".ko_nnext").stop().animate({left:"0"}).show().addClass("ko_3").removeClass("ko_nnext");
         
         $(".ko_1").removeClass("ko_1").addClass("ko_next");
         $(".ko_2").removeClass("ko_2").addClass("ko_nnext");

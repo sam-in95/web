@@ -16,7 +16,7 @@ header{width: 1080px;
                 border-bottom: 1px solid #dcdcdc;}
 .rang{width: 55px;
         height: 20px;
-        margin: 45px 0 0 10px;
+        margin: 38px 0 0 10px;
         border: 1px solid #222;
         border-radius: 10px;
         font-family: 'Noto Sans KR', sans-serif;
@@ -78,15 +78,13 @@ header{width: 1080px;
 
 .util{float: right;
         margin: -30px 10px 0 0;}
-.login,.search{float: left;
-        width: 20px;
-        height: 20px;}
-.login .icon{background: url('../img/icon_login.png') no-repeat;
+.login,.search{float: left;}
+.login .icon{background: url('../img/top_login_right.png') no-repeat;
                 width: 20px;
                 height: 20px;
                 background-size: 20px;}
-.search{margin-left: 15px;}
-.search .icon{background: url('../img/icon_search.png') no-repeat;
+.search{margin-left: 20px;}
+.search .icon{background: url('../img/top_search_right.png') no-repeat;
                 width: 20px;
                 height: 20px;
                 background-size: 20px;}

@@ -7,7 +7,7 @@ p,span{font-family: inherit;}
 
 /* banner */
 #banner{width: 100%; background-color: #dcdcdc;
-            max-width:1920px;
+            max-width: 1920px;
             min-width: 1080px;
             height: 800px;
             overflow: hidden;}
@@ -27,7 +27,7 @@ p,span{font-family: inherit;}
 
 .banner_text{position: absolute;
                 margin-top: 280px;
-                left: 22%;
+                left: 450px;
                 top: 0;
                 cursor: pointer;}
 .banner_text p{font-family: 'Jua', sans-serif;
@@ -35,28 +35,29 @@ p,span{font-family: inherit;}
                     color: #000;}
 .banner_text span{font-family: 'Jua', sans-serif;
                     font-size: 20px;
+                    line-height: 8px;
                     color: #000;
                     display: block;}
 .banner_text button{width: 60px;
                         height: 30px;
                         border: 1px solid #222;
-                        margin-top: 10px;
+                        margin-top: 30px;
                         background-color: none;
                         font-family: 'Jua', sans-serif;
                         font-size: 15px;}
 label{cursor: inherit;}
 
 .smart_img{position: absolute;
-            left: 55%;
-            top: 50px;
+            left: 860px;
+            top: 80px;
             z-index: 2;}
-.smart_img img{margin: 20px 0 0 -100px;}
+.smart_img img{width: 346px;}
 
 .big_ellip{width: 1170px;
             height: 1170px;
             border-radius: 100%;
             position: absolute;
-            left: 55%;
+            left: 970px;
             top: -180px;}
 
 .small_ellip{width: 700px;
@@ -64,25 +65,28 @@ label{cursor: inherit;}
                 border-radius: 100%;
                 background-color: #ffbd35;
                 position: absolute;
-                left: 68%;
+                left: 1150px;
                 top: 60px;
                 z-index: 3;}
 .slide_btn{position: relative;}
 .slide_btn li{position: absolute;
-                    font-family: "Noto Sans KR",sans-serif;
+                    font-family: 'Jua', sans-serif;
+                    font-weight: 200;
+                    font-size: 20px;
                     color: #666;
                     cursor: pointer;}
 
-.slide_btn_smart{top: 80px;
-                    left: 150px;}
-.slide_btn_blossom{top: 200px;
-                    left: 60px;}
-.slide_btn_ink{top: 320px;
-                    left: 20px;}
-.slide_btn_fountain{top: 440px;
-                        left: 60px;}
+.slide_btn_smart{top: 97px;
+                    left: 160px;}
+.slide_btn_blossom{top: 203px;
+                    left: 70px;}
+.slide_btn_ink{top: 337px;
+                    left: 30px;}
+.slide_btn_fountain{top: 475px;
+                        left: 70px;}
 .slide_btn_tap{color: #000 !important;
                 font-weight: 700;}
+
 .m_small_ellip{width: 92vw;
                     height: 92vw;
                     left: 15%;
@@ -90,37 +94,37 @@ label{cursor: inherit;}
                     position: absolute;
                     border-radius: 100%;
                     display: none;}
-.smart_small_ellip{background-color: #ffbd35;}
-.blossom_small_ellip{background-color: #c3c5e7;}
-.ink_small_ellip{background-color: #efdcde;}
-.fountain_small_ellip{background-color: #d2d2d2;}
 
 .smart_back{background-color: #ffbd35;}
 .smart_big_ellip{background-color: #f1dfcb;}
+.smart_small_ellip{background-color: #ffbd35;}
 
 .blossom_back{background-color: #c3c5e7;}
+.blossom_big_ellip{background-color: #efdcde;}
+.blossom_small_ellip{background-color: #c3c5e7;}
 .blossom_img{position: absolute;
                 top: 80px;
+                left: 753px;
                 z-index: 2;}
-.blossom_img img{width: 630px;
-                    margin-left: -200px;}
-.blossom_big_ellip{background-color: #efdcde;}
+.blossom_img img{width: 630px;}
 
 .ink_back{background-color: #efdcde;}
-.ink_img{position: absolute;
-            top: 180px;
-            z-index: 2;}
-.ink_img img{width: 310px;
-                margin-left: -120px;}
 .ink_big_ellip{background-color: #9f9f9f;}
+.ink_small_ellip{background-color: #efdcde;}
+.ink_img{position: absolute;
+            top: 172px;
+            left: 806px;
+            z-index: 2;}
+.ink_img img{width: 310px;}
 
 .fountain_back{background-color: #d2d2d2;}
-.fountain_img{position: absolute;
-                    top: 100px;
-                    z-index: 2;}
-.fountain_img img{width: 265px;
-                    margin-left: -80px;}
 .fountain_big_ellip{background-color: #f8f8f8;}
+.fountain_small_ellip{background-color: #d2d2d2;}
+.fountain_img{position: absolute;
+                    top: 95px;
+                    left: 880px;
+                    z-index: 2;}
+.fountain_img img{width: 265px;}
 
 .banner_smart{opacity: 1;}
 .banner_blossom{opacity: 0;}
@@ -130,28 +134,28 @@ label{cursor: inherit;}
 
 /* story */
 #story{width: 100%;
-            max-width: 1080px;
+            min-width: 1080px;
             font-family: 'Noto Sans KR', sans-serif;
-            margin: 100px auto;}
+            margin: 100px auto 0;}
 
 #story > p{font-size: 30px;
             color: #000;
             font-weight: 900;
             text-align: center;}
 
-.story_box{width: 1110px;
-                margin: 50px auto;}
-.friend,.since,.global{width: 360px;
+.story_box{width: 1080px;
+                margin: 50px auto 0;}
+.friend,.since,.global{width: 340px;
                         float: left;
-                        margin-left: 15px;}
-.story_img_box{width: 350px;
+                        margin-left: 20px;}
+.friend{margin-left: 10px;}
+.story_img_box{width: 340px;
                     height: 210px;
                     overflow: hidden;}
 .story_img_box:hover img{width: 380px;
                             margin-left: -10px;
                             transition: 0.5s;}
 .friend img,.since img,.global img{width: 360px;}
-.friend{margin-left: 0;}
 
 .head_text{float: right; /* 공간 떨어짐 */
                 height: 10px;}
@@ -172,7 +176,7 @@ label{cursor: inherit;}
 
 /* product */
 #product{margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 140px;
             height: 560px;
             width: 100%;
             max-width: 1080px;
@@ -191,7 +195,7 @@ label{cursor: inherit;}
             font-weight: 400;
             line-height: 30px;
             float: right;
-            right: 0;}
+            margin-right: 10px;}
 .more_btn span{float: left;
                 margin-left: 10px;}
 .more_btn .icon{background: url(../img/icon_right_arrow.png) no-repeat;
@@ -202,10 +206,10 @@ label{cursor: inherit;}
 
 
 .kategorie{margin-top: 50px;}
-.kategorie ul{width: 900px;
+.kategorie ul{width: 920px;
                 margin: 0 auto;}
 .kategorie li{float: left;
-                width: 225px;
+                width: 230px;
                 height: 40px;
                 text-align: center;
                 font-size: 18px;
@@ -219,17 +223,18 @@ label{cursor: inherit;}
 
 .product_item{margin-top: 30px;}
 
-.item_box{width: 204px;
+.item_box{width: 196px;
             height: 380px;
             border: 1px solid #000;
+            box-sizing: border-box;
             overflow: hidden;
             position: relative;
             float: left;
-            margin-left: 12px;}
-.product_item .item_box:first-child{margin-left: 0;}
+            margin-left: 20px;}
+.product_item .item_box:first-child{margin-left: 10px;}
 .item_text{position: absolute;
-                bottom: 25px;
-                left: 20px;}
+                bottom: 20px;
+                left: 25px;}
 .item_text span{font-size: 12px;
                     color: #666;}
 .iten_text p{font-size: 15px;
@@ -296,7 +301,9 @@ label{cursor: inherit;}
                     max-width: 1920px;
                     height: 300px;
                     overflow: hidden;
-                    margin-top: 100px;}
+                    margin-top: 100px;
+                    background: url('../img/small_banner.jpg');
+                    }
 /* promotion_banner */
 
 /* concept_store */
@@ -307,7 +314,7 @@ label{cursor: inherit;}
                 font-family: 'Noto Sans KR', sans-serif;
                 position: relative;}
 .concept_more{position: absolute;
-                right: 0;
+                right: 0px;
                 top: 25px;}
 .concept_text h2{font-size: 30px;
                     font-weight: 900;
@@ -320,9 +327,9 @@ label{cursor: inherit;}
 
 .concept_box{margin-top: 50px;}
 .store_suzi,.store_insadong,.store_everland{float: left;
-                                                margin-left: 15px;}
-.store_suzi{margin-left: 0;}
-.concept_img{width: 350px;
+                                                margin-left: 20px;}
+.store_suzi{margin-left: 10px;}
+.concept_img{width: 340px;
                 height: 300px;
                 overflow: hidden;}
 .concept_img img{width: 470px;}
@@ -353,14 +360,16 @@ label{cursor: inherit;}
 #story_pick{text-align: center;}
 
 .story_pick_gallery{margin-top: 40px;}
-.story_pick_box{width: 1080px;
+.story_pick_box{width: 1060px;
 /*                    height: 300px; 호버 */
                     height: 130px;
                     border-top: 1px solid #dcdcdc;
                     border-bottom: 1px solid #dcdcdc;
+                    box-sizing: border-box;
                     background-color: #f9f9f9;
                     /* background-color: #fff4d0; 호버 */
                     position: relative;
+                    margin-left: 10px;
                     cursor: pointer;}
 .story_pick_box img{display: none;}
 .story_pick_name{margin: 40px 0 0 20px;
@@ -385,14 +394,15 @@ label{cursor: inherit;}
                     overflow: hidden; 
                     position: absolute;
                     top: 20px;
-                    left: 550px;} /* 호버 */
+                    left: 540px;} /* 호버 */
 .story_pick_1 .story_pick_img img{margin-left: -40px;}
-.story_pick_2 .story_pick_img img{width: 400px;}
+.story_pick_2 .story_pick_img img{width: 400px;
+                                    height: 300px;}
 .story_pick_3 .story_pick_img img{width: 420px;}
 
 .story_pick_date{position: absolute;
                     display: block;
-                    top: 60px;
+                    top: 55px;
                     right: 20px;}
 .story_pick_date span{font-size: 16px;
                         color: #666;}

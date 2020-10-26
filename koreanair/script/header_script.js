@@ -7,12 +7,13 @@ $(function(){
         
         $header.stop().animate({"height":headerHeight + subHeight},200);
         $(this).find(".sub_nav").show();
-        $(".main_haeder_back").css({"border-bottom":"10px solid #000"});
+        $(".nav_under").show();
     });
         
     $("nav > ul > li").mouseleave(function(){
         $header.stop().animate({"height":headerHeight},200);
         $(this).find(".sub_nav").hide();
+        $(".nav_under").hide();
     });
         
 });

@@ -8,7 +8,6 @@ p,span{font-family: inherit;}
 /* banner */
 #banner{width: 100%; background-color: #dcdcdc;
             max-width: 1920px;
-            min-width: 1080px;
             height: 800px;
             overflow: hidden;}
 .banner_slide{width: 100%;
@@ -134,7 +133,6 @@ label{cursor: inherit;}
 
 /* story */
 #story{width: 100%;
-            min-width: 1080px;
             font-family: 'Noto Sans KR', sans-serif;
             margin: 100px auto 0;}
 
@@ -231,13 +229,13 @@ label{cursor: inherit;}
             position: relative;
             float: left;
             margin-left: 20px;}
-.product_item .item_box:first-child{margin-left: 10px;}
+.item_box:first-child{margin-left: 10px;}
 .item_text{position: absolute;
                 bottom: 20px;
                 left: 25px;}
 .item_text span{font-size: 12px;
                     color: #666;}
-.iten_text p{font-size: 15px;
+.item_text p{font-size: 15px;
                 color: #222;
                 margin-top: 12px;}
     /* pen */
@@ -411,3 +409,9 @@ label{cursor: inherit;}
             background-color: #fff4d0;}
 .story_tap img{display: block;}
 /* story_pick */
+
+/* 모바일 */
+@media all and (max-width: 767px){
+        
+    
+}

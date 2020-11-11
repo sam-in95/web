@@ -64,55 +64,55 @@ $(function(){
         }
     });
     
-//    var currentIndex = 0;
-//        
-//    var autoSlide = setInterval(function(){
-//        
-//        slideBtn.click(function(){
-//            currentIndex = slideBtn.index();
-//        });
-//                
-//        if(currentIndex < 3){
-//            currentIndex++;
-//        }else if(currentIndex = 3){
-//            currentIndex = 0;
-//        }
-//        
-//        slideBtn.removeClass("slide_btn_tap");
-//        slideBtn.eq(currentIndex).addClass("slide_btn_tap");
-//        
-//        $(".banner_back").css({"opacity":"0"});
-//        $(".big_ellip").css({"opacity":"0"});
-//        $(".banner_text").css({"opacity":"0","left":"-1500px"},1500);
-//        $(".banner_img").css({"opacity":"0","left":"2000px"},1500);
-//        
-//        $(".banner_box").eq(currentIndex).css({"opacity":"1"});
-//        $(".banner_back").eq(currentIndex).css({"opacity":"1"});
-//        $(".big_ellip").eq(currentIndex).css({"opacity":"1"});
-//        $(".banner_text").eq(currentIndex).css({"opacity":"1"}).animate({left:"450px"},500);
-//        $(".banner_img").eq(currentIndex).css({"opacity":"1"});
-//        
-//        if(currentIndex == 0){
-//            $(".small_ellip").css({"background-color":"#ffbd35"});
-//            $(".banner_img").animate({left:"860px"},600);
-//        }else if(currentIndex == 1){
-//            $(".small_ellip").css({"background-color":"#c3c5e7"});
-//            $(".banner_img").animate({left:"753px"},600);
-//        }else if(currentIndex == 2){
-//            $(".small_ellip").css({"background-color":"#efdcde"});
-//            $(".banner_img").animate({left:"806px"},600);
-//        }else if(currentIndex == 3){
-//            $(".small_ellip").css({"background-color":"#d2d2d2"});
-//            $(".banner_img").animate({left:"880px"},600);
-//        }
-//        
-//        slideBtn.click(function(){
-//            setTimeout(autoSlide, 1000);
-//        });
-//        
-//        
-//
-//    },5000);
+    var currentIndex = 0;
+        
+    var autoSlide = setInterval(function(){
+        
+        slideBtn.click(function(){
+            currentIndex = slideBtn.index();
+        });
+                
+        if(currentIndex < 3){
+            currentIndex++;
+        }else if(currentIndex = 3){
+            currentIndex = 0;
+        }
+        
+        slideBtn.removeClass("slide_btn_tap");
+        slideBtn.eq(currentIndex).addClass("slide_btn_tap");
+        
+        $(".banner_back").css({"opacity":"0"});
+        $(".big_ellip").css({"opacity":"0"});
+        $(".banner_text").css({"opacity":"0","left":"-1500px"},1500);
+        $(".banner_img").css({"opacity":"0","left":"2000px"},1500);
+        
+        $(".banner_box").eq(currentIndex).css({"opacity":"1"});
+        $(".banner_back").eq(currentIndex).css({"opacity":"1"});
+        $(".big_ellip").eq(currentIndex).css({"opacity":"1"});
+        $(".banner_text").eq(currentIndex).css({"opacity":"1"}).animate({left:"450px"},500);
+        $(".banner_img").eq(currentIndex).css({"opacity":"1"});
+        
+        if(currentIndex == 0){
+            $(".small_ellip").css({"background-color":"#ffbd35"});
+            $(".banner_img").animate({left:"860px"},600);
+        }else if(currentIndex == 1){
+            $(".small_ellip").css({"background-color":"#c3c5e7"});
+            $(".banner_img").animate({left:"753px"},600);
+        }else if(currentIndex == 2){
+            $(".small_ellip").css({"background-color":"#efdcde"});
+            $(".banner_img").animate({left:"806px"},600);
+        }else if(currentIndex == 3){
+            $(".small_ellip").css({"background-color":"#d2d2d2"});
+            $(".banner_img").animate({left:"880px"},600);
+        }
+        
+        slideBtn.click(function(){
+            setTimeout(autoSlide, 1000);
+        });
+        
+        
+
+    },5000);
     if($(window).width() < 1023){
             clearInterval(autoSlide);
             $(".banner_box").css({"opacity":"1"});

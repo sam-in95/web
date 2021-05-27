@@ -74,25 +74,24 @@
             }
         }
 
-
         var i = 0;
         var o = 0;
         function move() {
             if (i < 5 && o == 0) {
                 i++;
-                box.style.marginLeft = (i * 100 + 'px');
+                box.style.marginLeft = (i * 30 + 'px');
                 console.log(i, o);
             } else if (o < 5 && i == 5) {
                 o++;
-                box.style.marginTop = (o * 100 + 'px');
+                box.style.marginTop = (o * 30 + 'px');
                 console.log(i, o);
             } else if (i != 0 && i < 10 && o == 5) {
                 i--;
-                box.style.marginLeft = (i * 100 + "px");
+                box.style.marginLeft = (i * 30 + "px");
                 console.log(i, o);
             } else if (o < 10 && i == 0) {
                 o--;
-                box.style.marginTop = (o * 100 + "px");
+                box.style.marginTop = (o * 30 + "px");
                 console.log(i, o);
                 // i = 0;
                 // o = 0;

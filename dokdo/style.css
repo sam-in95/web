@@ -7,6 +7,7 @@ a{text-decoration: none; color: inherit;}
     max-width: 1920px;
     overflow: hidden;
     position: relative;
+    background-color: #f4f9ff;
 }
 
 /* header */
@@ -56,7 +57,8 @@ header{
     width: 100%;
     height: 80px;
     border-bottom: 1px solid #fff;
-    position: absolute;
+    position: absolute; 
+    display: block;
 }
 .main_header{
     width: 1024px;
@@ -91,7 +93,7 @@ nav ul li{
     border: 1px solid #fff;
     float: right;
     position: relative;
-    margin-top: 28px; /* 폼 추가 */ 
+    margin-top: 28px; 
 }
 .search input{
     width: 85px;
@@ -111,7 +113,42 @@ nav ul li{
 }
 
 .main_header_hover_wrap{
+    width: 100%;
+    height: 80px;
     display: none;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.main_header_hover{
+    width: 1024px;
+    margin: 0 auto;
+}
+.main_header_hover .logo{
+    height: 80px;
+    margin-left: 14px;
+}
+.main_header_hover .logo img{
+    width: 162px;
+    margin-top: 20px;
+}
+.main_header_hover li{
+    color: #222;
+}
+.main_header_hover .search{
+    border: 1px solid #222;
+}
+.main_header_hover .search input{
+    color: #222;
+}
+.main_header_hover .icon_search{
+    background: url(img/icon_search_black.png) no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    cursor: pointer;
 }
 /* header */
 

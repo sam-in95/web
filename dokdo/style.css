@@ -319,6 +319,7 @@ nav ul li{
 }
 .notice_con_title{
     font-size: 18px;
+    width: 283px;
     font-weight: bold;
     position: absolute;
     top: 68px;
@@ -329,6 +330,7 @@ nav ul li{
     display: block;
     font-size: 15px;
     line-height: 24px;
+    width: 283px;
     color: #555;
     position: absolute;
     top: 138px;
@@ -341,6 +343,12 @@ nav ul li{
     position: absolute;
     bottom: 10px;
     left: 22px;
+}
+.notice_con_2{
+    display: none;
+}
+.notice_con_3{
+    display: none;
 }
 /* con_1 quick menu & notice */
 

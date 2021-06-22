@@ -204,6 +204,31 @@ nav ul li{
 }
 /* banner */
 
+/* top_btn */
+.top_btn{
+    width: 50px;
+    height: 60px;
+    background-color: #5c5f67;
+    position: fixed;
+    right: 370px;
+    bottom: 100px;
+    cursor: pointer;
+    display: none;
+}
+.top_arrow{
+    width: 20px;
+    height: 10px;
+    margin: 6px auto;
+}
+.top_btn span{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+}
+/* top_btn */
+
 /* con_1 quick menu & notice */
 .con_1{
     width: 1024px;
@@ -366,12 +391,29 @@ nav ul li{
     height: 285px;
     border: 5px solid #383a4a;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
 .gallery_title{
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-top: 36px;
+}
+    /* btn_hover */
+.mask{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    transition: 0.4s;
+    background-color: #fff;
+    transform: translate3d(-150%, -80%, 0) rotate3d(0, 0, 1, 30deg);
+}
+.gallery_title_box:hover .mask{
+    background-color: #383a4a;
+    transform: translate3d(300%, -100px, 0) rotate3d(0, 0, 1, 30deg);
 }
 .gallery_images{
     position: absolute;
@@ -381,10 +423,7 @@ nav ul li{
     width: 502px;
     height: 280px;
     overflow: hidden;
-}
-.gallery_image:hover{
-    box-shadow: -5px 3px 10px 0 rgba(0,0,0,0.3);
-    transition: 0.5s;
+    position: relative;
 }
 .gallery_img_1,
 .gallery_img_2{
@@ -429,6 +468,21 @@ nav ul li{
 .gallery_img_4{
     margin-right: 20px;
 }
+
+    /* gellry hover */
+.g_mask{
+    position: absolute;
+    width: 50px;
+    height: 550px;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translate3d(-300%, -80%, 0) rotate3d(0, 0, 1, 30deg);
+}
+.gallery_image:hover .g_mask{
+    transform: translate3d(1400%, -80%, 0) rotate3d(0, 0, 1, 30deg);
+
+}
+    /* gellry hover */
 /* con_2 gallery */
 
 /* line banner */
@@ -454,6 +508,7 @@ nav ul li{
     height: 285px;
     border: 5px solid #383a4a;
     position: relative;
+    cursor: pointer;
 }
 .news_title{
     font-size: 36px; /* 높이 이상함*/

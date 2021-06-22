@@ -31,3 +31,23 @@ noticeBtn.click(function () {
   noticeCon.css({ 'display': 'none', 'margin-left': '300px' });
   noticeCon.eq(index).fadeIn().css({ 'margin-left': '350px', 'transition': '0.5s' });
 });
+
+
+let noticeText = $('.notice_con_text');
+for (var i = 0; i <= noticeText.length; i++) {
+  let noticeConText = noticeText.eq(i);
+  let changeText = (noticeConText.text()).substr(0, 110);
+  noticeConText.text(changeText + '..');
+}
+
+let topBtn = $('.top_btn');
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 200) {
+    topBtn.fadeIn();
+  } else if ($(this).scrollTop() <= 200) {
+    topBtn.fadeOut();
+  }
+});
+topBtn.click(function () {
+  $('html, body').animate({ scrollTop: 0 }, 300);
+});

@@ -98,32 +98,32 @@
                 <div class="btn numBtn"></div>
             </div>
             <div class="numLine_2">
-                <div class="btn numBtn num_7">7</div>
-                <div class="btn numBtn num_8">8</div>
-                <div class="btn numBtn num_9">9</div>
+                <div class="btn numBtn num_7" id="7">7</div>
+                <div class="btn numBtn num_8" id="8">8</div>
+                <div class="btn numBtn num_9" id="9">9</div>
             </div>
             <div class="numLine_3">
-                <div class="btn numBtn num_4">4</div>
-                <div class="btn numBtn num_5">5</div>
-                <div class="btn numBtn num_6">6</div>
+                <div class="btn numBtn num_4" id="4">4</div>
+                <div class="btn numBtn num_5" id="5">5</div>
+                <div class="btn numBtn num_6" id="6">6</div>
             </div>
             <div class="numLine_4">
-                <div class="btn numBtn num_1">1</div>
-                <div class="btn numBtn num_2">2</div>
-                <div class="btn numBtn num_3">3</div>
+                <div class="btn numBtn num_1" id="1">1</div>
+                <div class="btn numBtn num_2" id="2">2</div>
+                <div class="btn numBtn num_3" id="3">3</div>
             </div>
             <div class="numLine_5">
-                <div class="btn numBtn num_0">0</div>
-                <div class="btn num_dot">.</div>
+                <div class="btn numBtn num_0" id="0">0</div>
+                <div class="btn num_dot" id=".">.</div>
             </div>
         </div>
 
         <div class="operBtnBox">
-            <div class="operBtn oper_division">/</div>
-            <div class="operBtn oper_multiplication">*</div>
-            <div class="operBtn oper_sum">+</div>
-            <div class="operBtn oper_subtracation">-</div>
-            <div class="oper_equal">=</div>
+            <div class="operBtn oper_division" id="/">/</div>
+            <div class="operBtn oper_multiplication" id="*">*</div>
+            <div class="operBtn oper_sum" id="+">+</div>
+            <div class="operBtn oper_subtracation" id="-">-</div>
+            <div class="oper_equal" id="Enter">=</div>
         </div>
     </div>
 
@@ -159,14 +159,109 @@
                         displayValue.innerText = this.innerText;
                         beforeNumOn = false;
                     } else {
-                        displayValue.innerText += this.innerText;
-
+                        if (displayValue.innerText == '0') {
+                            displayValue.innerText = this.innerText;
+                        } else if (displayValue.innerText !== '0') {
+                            displayValue.innerText += this.innerText;
+                        }
                     }
-
                 }
             });
-
         }
+
+        window.addEventListener('keydown', function (e) {
+            let key = document.getElementById(e.key);
+            if (e.key == '.') {
+                if (dotOn == true) {
+                    if (displayValue.innerText == '0') {
+                        displayValue.innerText += key.innerText;
+                        dotOn = false;
+                    } else {
+                        displayValue.innerText += key.innerText;
+                        dotOn = false;
+                    }
+                } else {
+
+                }
+            } else {
+
+                if (e.key == 'Escape') {
+                    afterNum = 0;
+                    beforeNum = 0;
+                    displayValue.innerText = '0';
+                    for (i = 0; i < operBtn.length; i++) {
+                        operBtn[i].style.backgroundColor = 'green';
+                        operBtn[i].style.color = '#000';
+                    }
+                    afterNumOn = true;
+                    beforeNumOn = true;
+                    dotOn = true;
+                } else {
+                    if (e.key == 'Enter') {
+                        beforeNum = displayValue.innerText;
+                        result = eval(Number(afterNum) + oper + Number(beforeNum));
+                        displayValue.innerText = '';
+                        displayValue.innerText = result;
+                        for (i = 0; i < operBtn.length; i++) {
+                            operBtn[i].style.backgroundColor = 'green';
+                            operBtn[i].style.color = '#000';
+                        }
+                        afterNumOn = false;
+                        beforeNumOn = true;
+                        dotOn = true;
+                        console.log(displayValue.innerText.length);
+                        if (displayValue.innerText.length > 12) {
+                            let cutValue = displayValue.innerText.substr(0, 12);
+                            displayValue.innerText.toLocaleString('ko-KR') = cutValue + '...';
+                        }
+                        console.log(result);
+                    } else {
+
+                        if (e.key == '+' || e.key == '-' || e.key == '/' || e.key == "*") {
+                            if (displayValue.innerText === '0') {
+                                alert('숫자없음');
+                            } else {
+                                afterNum = displayValue.innerText;
+                                oper = key.innerText;
+                                afterNumOn = false;
+                                beforeNumOn = true;
+                                console.log(afterNum);
+                                operBtn[0].style.backgroundColor = 'green';
+                                operBtn[1].style.backgroundColor = 'green';
+                                operBtn[2].style.backgroundColor = 'green';
+                                operBtn[3].style.backgroundColor = 'green';
+                                key.style.backgroundColor = 'rgba(0, 58, 0)';
+                                key.style.color = '#fff';
+                            }
+
+                            dotOn = true;
+                        } else {
+                            if (afterNumOn == true) {
+                                if (displayValue.innerText == '0') {
+                                    displayValue.innerText = key.innerText;
+                                } else if (displayValue.innerText !== '0') {
+                                    displayValue.innerText += key.innerText;
+                                }
+                            }
+                            else {
+                                if (beforeNumOn == true) {
+                                    displayValue.innerText = '';
+                                    displayValue.innerText = key.innerText;
+                                    beforeNumOn = false;
+                                } else {
+                                    if (displayValue.innerText == '0') {
+                                        displayValue.innerText = key.innerText;
+                                    } else if (displayValue.innerText !== '0') {
+                                        displayValue.innerText += key.innerText;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        });
         let numDot = document.querySelector('.num_dot');
         let dotOn = true;
         numDot.addEventListener('click', function () {

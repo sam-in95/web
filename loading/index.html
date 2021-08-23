@@ -19,6 +19,16 @@
             display: block;
         }
 
+        body {
+            width: 100%;
+        }
+
+        .con {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
         .box {
             width: 100px;
             height: 100px;
@@ -57,7 +67,7 @@
         #canvas_2,
         #canvas_3 {
             position: absolute;
-            margin: 200px 0 0 300px;
+            margin: 0 auto;
             /* margin-top: 100px;  */
             /* animation: rotation 1s linear infinite; */
             /* transform-origin: bottom left; */
@@ -66,14 +76,11 @@
 </head>
 
 <body>
-    <!-- <div class="box">
-
-    </div> -->
-
-    <canvas id="canvas_1" width="200" height="200"></canvas>
-    <canvas id="canvas_2" width="200" height="200"></canvas>
-    <canvas id="canvas_3" width="200" height="200"></canvas>
-
+    <div class="con">
+        <canvas id="canvas_1" width="200" height="200"></canvas>
+        <canvas id="canvas_2" width="200" height="200"></canvas>
+        <canvas id="canvas_3" width="200" height="200"></canvas>
+    </div>
     <script>
         const canvas_1 = document.querySelector('#canvas_1');
         let ctx_1 = canvas_1.getContext('2d');

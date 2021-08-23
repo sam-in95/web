@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 100px 0 0 50px;
+            animation: rotation 1s linear infinite;
+            transform-origin: bottom left;
+            position: absolute;
+        }
+
+        @keyframes rotation {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #canvas_1 {
+            /* animation: rotation 1s linear infinite; */
+            /* transform-origin: bottom left; */
+            /* margin-left: 200px; */
+            /* background-color: yellow; */
+            animation: rotation 1s linear infinite;
+        }
+
+        #canvas_2 {
+            /* background-color: green; */
+            animation: rotation 1.2s linear infinite;
+        }
+
+        #canvas_3 {
+            /* background-color: blue; */
+            animation: rotation 1.5s linear infinite;
+        }
+
+        #canvas_1,
+        #canvas_2,
+        #canvas_3 {
+            position: absolute;
+            margin: 200px 0 0 300px;
+            /* margin-top: 100px;  */
+            /* animation: rotation 1s linear infinite; */
+            /* transform-origin: bottom left; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box">
+
+    </div> -->
+
+    <canvas id="canvas_1" width="200" height="200"></canvas>
+    <canvas id="canvas_2" width="200" height="200"></canvas>
+    <canvas id="canvas_3" width="200" height="200"></canvas>
+
+    <script>
+        const canvas_1 = document.querySelector('#canvas_1');
+        let ctx_1 = canvas_1.getContext('2d');
+
+        ctx_1.beginPath();
+        // ctx_1.moveTo(50, 50);
+        // ctx_1.arcTo(150, 50, 150, 150, 100);
+        ctx_1.arc(100, 100, 50, 1.5 * Math.PI, 2 * Math.PI);
+        // arcTo(x1, y1, x2, y2, radius)
+        // x1 - 시작점을 지나는(연장하는) 첫 번째 x위치 
+        // y1 - 시작점을 지나는(연장하는) 첫 번째 y위치 
+        // x2 - 원의 기준이 되는 두 번째 x위치
+        // y2 - 원의 기준이 되는 두 번째 y위치
+        ctx_1.lineWidth = 10;
+        ctx_1.strokeStyle = 'red';
+        ctx_1.stroke();
+
+        const canvas_2 = document.querySelector('#canvas_2');
+        let ctx_2 = canvas_2.getContext('2d');
+
+        ctx_2.beginPath();
+        // ctx_2.moveTo(25, 25);
+        // ctx_2.arcTo(150, 25, 175, 150, 150);
+        ctx_2.arc(100, 100, 60, 1.5 * Math.PI, 2 * Math.PI);
+        ctx_2.lineWidth = 10;
+        ctx_2.strokeStyle = 'green';
+        ctx_2.stroke();
+
+        const canvas_3 = document.querySelector('#canvas_3');
+        let ctx_3 = canvas_3.getContext('2d');
+
+        ctx_3.beginPath();
+        // ctx_3.moveTo(0, 0);
+        // ctx_3.arcTo(200, 25, 200, 200, 200);
+        ctx_3.arc(100, 100, 70, 1.5 * Math.PI, 2 * Math.PI);
+        ctx_3.lineWidth = 10;
+        ctx_3.strokeStyle = 'blue';
+        ctx_3.stroke();
+    </script>
+</body>
+
+</html>

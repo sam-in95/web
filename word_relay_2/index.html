@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쿵쿵따</title>
+  </head>
+  <body>
+    <h3>쿵쿵따</h3>
+    <div>
+      <span id="order">1</span>
+      번째 참가자
+    </div>
+    <div>
+      제시어 :
+      <span id="word"></span>
+    </div>
+    <input type="text" />
+    <button>입력</button>
+
+    <script>
+      const number = parseInt(prompt('참가자가 몇 명입니까?'), 10);
+
+      if (number) {
+        // prompt에 숫자가 아니면 NaN / 취소 누르면 null 이 나오고 parseInt에 false가 반환 --> number == false
+        const $order = document.querySelector('#order');
+        const $word = document.querySelector('#word');
+        const $button = document.querySelector('button');
+        const $input = document.querySelector('input');
+        let word;
+        let newWord;
+
+        $input.focus();
+
+        const onInput = (evnet) => {
+          newWord = event.target.value;
+        };
+
+        const onClickButton = () => {
+          if ((!word || word[word.length - 1] === newWord[0]) && newWord.length === 3) {
+            // 제시어가 비어있으면
+            $word.textContent = newWord;
+            word = newWord;
+            const order = parseInt($order.textContent);
+            if (order + 1 > number) {
+              $order.textContent = 1;
+            } else {
+              $order.textContent = order + 1;
+            }
+            $input.value = '';
+            $input.focus();
+          } else {
+            alert('틀렸습니다');
+            $input.value = '';
+          }
+        };
+        document.querySelector('input').addEventListener('input', onInput);
+
+        document.querySelector('button').addEventListener('click', onClickButton);
+        document.addEventListener('keydown', (e) => {
+          if (e.keyCode === 13) {
+            onClickButton();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

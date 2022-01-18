@@ -1,348 +1,347 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        .clearfix::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
+      .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
 
-        #wrap {
-            width: 500px;
-            height: 750px;
-            background-color: skyblue;
-        }
+      #wrap {
+        width: 500px;
+        height: 750px;
+        background-color: skyblue;
+      }
 
-        .display {
-            width: 480px;
-            height: 100px;
-            background-color: #000;
-            margin: 0 0 0 10px;
-        }
+      .display {
+        width: 480px;
+        height: 100px;
+        background-color: #000;
+        margin: 0 0 0 10px;
+      }
 
-        .value {
-            color: #fff;
-            text-align: right;
-            font-size: 60px;
-            line-height: 100px;
-            display: block;
-            margin-right: 12px;
-        }
+      .value {
+        color: #fff;
+        text-align: right;
+        font-size: 60px;
+        line-height: 100px;
+        display: block;
+        margin-right: 12px;
+      }
 
-        .numBtnBox,
-        .operBtnBox {
-            float: left;
-            margin-top: 12px;
-        }
+      .numBtnBox,
+      .operBtnBox {
+        float: left;
+        margin-top: 12px;
+      }
 
-        .btn {
-            float: left;
-            width: 110px;
-            height: 110px;
-            text-align: center;
-            background-color: orange;
-            border-radius: 100%;
-            line-height: 110px;
-            margin: 12px 0 0 12px;
-            font-weight: bold;
-            font-size: 40px;
-            cursor: pointer;
-        }
+      .btn {
+        float: left;
+        width: 110px;
+        height: 110px;
+        text-align: center;
+        background-color: orange;
+        border-radius: 100%;
+        line-height: 110px;
+        margin: 12px 0 0 12px;
+        font-weight: bold;
+        font-size: 40px;
+        cursor: pointer;
+      }
 
-        .num_0 {
-            width: 232px;
-            border-radius: 100px;
-        }
+      .num_0 {
+        width: 232px;
+        border-radius: 100px;
+      }
 
-        .operBtn,
-        .oper_equal {
-            width: 110px;
-            height: 110px;
-            text-align: center;
-            line-height: 110px;
-            background-color: green;
-            border-radius: 100%;
-            margin: 12px 0 0 12px;
-            font-weight: bold;
-            font-size: 40px;
-            cursor: pointer;
-        }
+      .operBtn,
+      .oper_equal {
+        width: 110px;
+        height: 110px;
+        text-align: center;
+        line-height: 110px;
+        background-color: green;
+        border-radius: 100%;
+        margin: 12px 0 0 12px;
+        font-weight: bold;
+        font-size: 40px;
+        cursor: pointer;
+      }
 
-        .operToggle {
-            background-color: yellow;
-        }
+      .operToggle {
+        background-color: yellow;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrap" class="clearfix">
-        <div class="display">
-            <span class="value">0</span>
+      <div class="display">
+        <span class="value">0</span>
+      </div>
+      <div></div>
+      <div class="numBtnBox">
+        <div class="numLine_1">
+          <div class="btn acBtn">A/C</div>
+          <div class="btn numBtn"></div>
+          <div class="btn numBtn"></div>
         </div>
-        <div class="numBtnBox">
-            <div class="numLine_1">
-                <div class="btn acBtn">A/C</div>
-                <div class="btn numBtn"></div>
-                <div class="btn numBtn"></div>
-            </div>
-            <div class="numLine_2">
-                <div class="btn numBtn num_7" id="7">7</div>
-                <div class="btn numBtn num_8" id="8">8</div>
-                <div class="btn numBtn num_9" id="9">9</div>
-            </div>
-            <div class="numLine_3">
-                <div class="btn numBtn num_4" id="4">4</div>
-                <div class="btn numBtn num_5" id="5">5</div>
-                <div class="btn numBtn num_6" id="6">6</div>
-            </div>
-            <div class="numLine_4">
-                <div class="btn numBtn num_1" id="1">1</div>
-                <div class="btn numBtn num_2" id="2">2</div>
-                <div class="btn numBtn num_3" id="3">3</div>
-            </div>
-            <div class="numLine_5">
-                <div class="btn numBtn num_0" id="0">0</div>
-                <div class="btn num_dot" id=".">.</div>
-            </div>
+        <div class="numLine_2">
+          <div class="btn numBtn num_7" id="7">7</div>
+          <div class="btn numBtn num_8" id="8">8</div>
+          <div class="btn numBtn num_9" id="9">9</div>
         </div>
+        <div class="numLine_3">
+          <div class="btn numBtn num_4" id="4">4</div>
+          <div class="btn numBtn num_5" id="5">5</div>
+          <div class="btn numBtn num_6" id="6">6</div>
+        </div>
+        <div class="numLine_4">
+          <div class="btn numBtn num_1" id="1">1</div>
+          <div class="btn numBtn num_2" id="2">2</div>
+          <div class="btn numBtn num_3" id="3">3</div>
+        </div>
+        <div class="numLine_5">
+          <div class="btn numBtn num_0" id="0">0</div>
+          <div class="btn num_dot" id=".">.</div>
+        </div>
+      </div>
 
-        <div class="operBtnBox">
-            <div class="operBtn oper_division" id="/">/</div>
-            <div class="operBtn oper_multiplication" id="*">*</div>
-            <div class="operBtn oper_sum" id="+">+</div>
-            <div class="operBtn oper_subtracation" id="-">-</div>
-            <div class="oper_equal" id="Enter">=</div>
-        </div>
+      <div class="operBtnBox">
+        <div class="operBtn oper_division" id="/">/</div>
+        <div class="operBtn oper_multiplication" id="*">*</div>
+        <div class="operBtn oper_sum" id="+">+</div>
+        <div class="operBtn oper_subtracation" id="-">-</div>
+        <div class="oper_equal" id="Enter">=</div>
+      </div>
     </div>
 
     <script>
-        let displayValue = document.querySelector('.value');
-        console.log(displayValue.innerHTML);
+      let displayValue = document.querySelector('.value');
+      console.log(displayValue.innerHTML);
 
-        if (displayValue.innerText.length > 2) {
-            displayValue.innerText.substr(0, 1);
-        }
+      if (displayValue.innerText.length > 2) {
+          displayValue.innerText.substr(0, 1);
+      }
 
-        var afterNum = 0,
-            beforeNum = 0,
-            result = 0;
+      var afterNum = 0,
+          beforeNum = 0,
+          result = 0;
 
 
-        let numBtn = document.querySelectorAll('.numBtn');
-        let afterNumOn = true;
-        let beforeNumOn = true;
-        // let numBtn = Array.prototype.slice.call(numBtnList);
-        for (i = 0; i < numBtn.length; i++) {
-            numBtn[i].addEventListener('click', function () {
-                if (afterNumOn == true) {
-                    if (displayValue.innerText == '0') {
-                        displayValue.innerText = this.innerText;
-                    } else if (displayValue.innerText !== '0') {
-                        displayValue.innerText += this.innerText;
-                    }
-                }
-                else {
-                    if (beforeNumOn == true) {
-                        displayValue.innerText = '';
-                        displayValue.innerText = this.innerText;
-                        beforeNumOn = false;
-                    } else {
-                        if (displayValue.innerText == '0') {
-                            displayValue.innerText = this.innerText;
-                        } else if (displayValue.innerText !== '0') {
-                            displayValue.innerText += this.innerText;
-                        }
-                    }
-                }
-            });
-        }
+      let numBtn = document.querySelectorAll('.numBtn');
+      let afterNumOn = true;
+      let beforeNumOn = true;
+      // let numBtn = Array.prototype.slice.call(numBtnList);
+      for (i = 0; i < numBtn.length; i++) {
+          numBtn[i].addEventListener('click', function () {
+              if (afterNumOn == true) {
+                  if (displayValue.innerText == '0') {
+                      displayValue.innerText = this.innerText;
+                  } else if (displayValue.innerText !== '0') {
+                      displayValue.innerText += this.innerText;
+                  }
+              }
+              else {
+                  if (beforeNumOn == true) {
+                      displayValue.innerText = '';
+                      displayValue.innerText = this.innerText;
+                      beforeNumOn = false;
+                  } else {
+                      if (displayValue.innerText == '0') {
+                          displayValue.innerText = this.innerText;
+                      } else if (displayValue.innerText !== '0') {
+                          displayValue.innerText += this.innerText;
+                      }
+                  }
+              }
+          });
+      }
 
-        window.addEventListener('keydown', function (e) {
-            let key = document.getElementById(e.key);
-            if (e.key == '.') {
-                if (dotOn == true) {
-                    if (displayValue.innerText == '0') {
-                        displayValue.innerText += key.innerText;
-                        dotOn = false;
-                    } else {
-                        displayValue.innerText += key.innerText;
-                        dotOn = false;
-                    }
-                } else {
+      window.addEventListener('keydown', function (e) {
+          let key = document.getElementById(e.key);
+          if (e.key == '.') {
+              if (dotOn == true) {
+                  if (displayValue.innerText == '0') {
+                      displayValue.innerText += key.innerText;
+                      dotOn = false;
+                  } else {
+                      displayValue.innerText += key.innerText;
+                      dotOn = false;
+                  }
+              } else {
 
-                }
-            } else {
+              }
+          } else {
 
-                if (e.key == 'Escape') {
-                    afterNum = 0;
-                    beforeNum = 0;
-                    displayValue.innerText = '0';
-                    for (i = 0; i < operBtn.length; i++) {
-                        operBtn[i].style.backgroundColor = 'green';
-                        operBtn[i].style.color = '#000';
-                    }
-                    afterNumOn = true;
-                    beforeNumOn = true;
-                    dotOn = true;
-                } else {
-                    if (e.key == 'Enter') {
-                        beforeNum = displayValue.innerText;
-                        result = eval(Number(afterNum) + oper + Number(beforeNum));
-                        displayValue.innerText = '';
-                        displayValue.innerText = result;
-                        for (i = 0; i < operBtn.length; i++) {
-                            operBtn[i].style.backgroundColor = 'green';
-                            operBtn[i].style.color = '#000';
-                        }
-                        afterNumOn = false;
-                        beforeNumOn = true;
-                        dotOn = true;
-                        console.log(displayValue.innerText.length);
-                        if (displayValue.innerText.length > 12) {
-                            let cutValue = displayValue.innerText.substr(0, 12);
-                            displayValue.innerText.toLocaleString('ko-KR') = cutValue + '...';
-                        }
-                        console.log(result);
-                    } else {
+              if (e.key == 'Escape') {
+                  afterNum = 0;
+                  beforeNum = 0;
+                  displayValue.innerText = '0';
+                  for (i = 0; i < operBtn.length; i++) {
+                      operBtn[i].style.backgroundColor = 'green';
+                      operBtn[i].style.color = '#000';
+                  }
+                  afterNumOn = true;
+                  beforeNumOn = true;
+                  dotOn = true;
+              } else {
+                  if (e.key == 'Enter') {
+                      beforeNum = displayValue.innerText;
+                      result = eval(Number(afterNum) + oper + Number(beforeNum));
+                      displayValue.innerText = '';
+                      displayValue.innerText = result;
+                      for (i = 0; i < operBtn.length; i++) {
+                          operBtn[i].style.backgroundColor = 'green';
+                          operBtn[i].style.color = '#000';
+                      }
+                      afterNumOn = false;
+                      beforeNumOn = true;
+                      dotOn = true;
+                      console.log(displayValue.innerText.length);
+                      if (displayValue.innerText.length > 12) {
+                          let cutValue = displayValue.innerText.substr(0, 12);
+                          displayValue.innerText.toLocaleString('ko-KR') = cutValue + '...';
+                      }
+                      console.log(result);
+                  } else {
 
-                        if (e.key == '+' || e.key == '-' || e.key == '/' || e.key == "*") {
-                            if (displayValue.innerText === '0') {
-                                alert('숫자없음');
-                            } else {
-                                afterNum = displayValue.innerText;
-                                oper = key.innerText;
-                                afterNumOn = false;
-                                beforeNumOn = true;
-                                console.log(afterNum);
-                                operBtn[0].style.backgroundColor = 'green';
-                                operBtn[1].style.backgroundColor = 'green';
-                                operBtn[2].style.backgroundColor = 'green';
-                                operBtn[3].style.backgroundColor = 'green';
-                                key.style.backgroundColor = 'rgba(0, 58, 0)';
-                                key.style.color = '#fff';
-                            }
+                      if (e.key == '+' || e.key == '-' || e.key == '/' || e.key == "*") {
+                          if (displayValue.innerText === '0') {
+                              alert('숫자없음');
+                          } else {
+                              afterNum = displayValue.innerText;
+                              oper = key.innerText;
+                              afterNumOn = false;
+                              beforeNumOn = true;
+                              console.log(afterNum);
+                              operBtn[0].style.backgroundColor = 'green';
+                              operBtn[1].style.backgroundColor = 'green';
+                              operBtn[2].style.backgroundColor = 'green';
+                              operBtn[3].style.backgroundColor = 'green';
+                              key.style.backgroundColor = 'rgba(0, 58, 0)';
+                              key.style.color = '#fff';
+                          }
 
-                            dotOn = true;
-                        } else {
-                            if (afterNumOn == true) {
-                                if (displayValue.innerText == '0') {
-                                    displayValue.innerText = key.innerText;
-                                } else if (displayValue.innerText !== '0') {
-                                    displayValue.innerText += key.innerText;
-                                }
-                            }
-                            else {
-                                if (beforeNumOn == true) {
-                                    displayValue.innerText = '';
-                                    displayValue.innerText = key.innerText;
-                                    beforeNumOn = false;
-                                } else {
-                                    if (displayValue.innerText == '0') {
-                                        displayValue.innerText = key.innerText;
-                                    } else if (displayValue.innerText !== '0') {
-                                        displayValue.innerText += key.innerText;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                          dotOn = true;
+                      } else {
+                          if (afterNumOn == true) {
+                              if (displayValue.innerText == '0') {
+                                  displayValue.innerText = key.innerText;
+                              } else if (displayValue.innerText !== '0') {
+                                  displayValue.innerText += key.innerText;
+                              }
+                          }
+                          else {
+                              if (beforeNumOn == true) {
+                                  displayValue.innerText = '';
+                                  displayValue.innerText = key.innerText;
+                                  beforeNumOn = false;
+                              } else {
+                                  if (displayValue.innerText == '0') {
+                                      displayValue.innerText = key.innerText;
+                                  } else if (displayValue.innerText !== '0') {
+                                      displayValue.innerText += key.innerText;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
 
-        });
-        let numDot = document.querySelector('.num_dot');
-        let dotOn = true;
-        numDot.addEventListener('click', function () {
-            if (dotOn == true) {
-                if (displayValue.innerText == '0') {
-                    displayValue.innerText += this.innerText;
-                    dotOn = false;
-                } else {
-                    displayValue.innerText += this.innerText;
-                    dotOn = false;
-                }
-            } else {
+      });
+      let numDot = document.querySelector('.num_dot');
+      let dotOn = true;
+      numDot.addEventListener('click', function () {
+          if (dotOn == true) {
+              if (displayValue.innerText == '0') {
+                  displayValue.innerText += this.innerText;
+                  dotOn = false;
+              } else {
+                  displayValue.innerText += this.innerText;
+                  dotOn = false;
+              }
+          } else {
 
-            }
+          }
 
-        });
+      });
 
-        let operBtn = document.querySelectorAll('.operBtn');
-        let oper = 0;
-        for (i = 0; i < operBtn.length; i++) {
-            operBtn[i].addEventListener('click', function () {
-                if (displayValue.innerText === '0') {
-                    alert('숫자없음');
-                } else {
-                    afterNum = displayValue.innerText;
-                    oper = this.innerText;
-                    afterNumOn = false;
-                    beforeNumOn = true;
-                    console.log(afterNum);
-                    operBtn[0].style.backgroundColor = 'green';
-                    operBtn[1].style.backgroundColor = 'green';
-                    operBtn[2].style.backgroundColor = 'green';
-                    operBtn[3].style.backgroundColor = 'green';
-                    this.style.backgroundColor = 'rgba(0, 58, 0)';
-                    this.style.color = '#fff';
-                }
+      let operBtn = document.querySelectorAll('.operBtn');
+      let oper = 0;
+      for (i = 0; i < operBtn.length; i++) {
+          operBtn[i].addEventListener('click', function () {
+              if (displayValue.innerText === '0') {
+                  alert('숫자없음');
+              } else {
+                  afterNum = displayValue.innerText;
+                  oper = this.innerText;
+                  afterNumOn = false;
+                  beforeNumOn = true;
+                  console.log(afterNum);
+                  operBtn[0].style.backgroundColor = 'green';
+                  operBtn[1].style.backgroundColor = 'green';
+                  operBtn[2].style.backgroundColor = 'green';
+                  operBtn[3].style.backgroundColor = 'green';
+                  this.style.backgroundColor = 'rgba(0, 58, 0)';
+                  this.style.color = '#fff';
+              }
 
-                dotOn = true;
-            });
-        }
+              dotOn = true;
+          });
+      }
 
-        let equalBtn = document.querySelector('.oper_equal');
-        equalBtn.addEventListener('click', function () {
-            beforeNum = displayValue.innerText;
-            result = eval(Number(afterNum) + oper + Number(beforeNum));
-            displayValue.innerText = '';
-            displayValue.innerText = result;
-            for (i = 0; i < operBtn.length; i++) {
-                operBtn[i].style.backgroundColor = 'green';
-                operBtn[i].style.color = '#000';
-            }
-            afterNumOn = false;
-            beforeNumOn = true;
-            dotOn = true;
-            console.log(displayValue.innerText.length);
-            if (displayValue.innerText.length > 12) {
-                let cutValue = displayValue.innerText.substr(0, 12);
-                displayValue.innerText.toLocaleString('ko-KR') = cutValue + '...';
-            }
-            console.log(result);
-        });
+      let equalBtn = document.querySelector('.oper_equal');
+      equalBtn.addEventListener('click', function () {
+          beforeNum = displayValue.innerText;
+          result = eval(Number(afterNum) + oper + Number(beforeNum));
+          displayValue.innerText = '';
+          displayValue.innerText = result;
+          for (i = 0; i < operBtn.length; i++) {
+              operBtn[i].style.backgroundColor = 'green';
+              operBtn[i].style.color = '#000';
+          }
+          afterNumOn = false;
+          beforeNumOn = true;
+          dotOn = true;
+          console.log(displayValue.innerText.length);
+          if (displayValue.innerText.length > 12) {
+              let cutValue = displayValue.innerText.substr(0, 12);
+              displayValue.innerText.toLocaleString('ko-KR') = cutValue + '...';
+          }
+          console.log(result);
+      });
 
-        let acBtn = document.querySelector('.acBtn');
-        acBtn.addEventListener('click', function () {
-            afterNum = 0;
-            beforeNum = 0;
-            displayValue.innerText = '0';
-            for (i = 0; i < operBtn.length; i++) {
-                operBtn[i].style.backgroundColor = 'green';
-                operBtn[i].style.color = '#000';
-            }
-            afterNumOn = true;
-            beforeNumOn = true;
-            dotOn = true;
+      let acBtn = document.querySelector('.acBtn');
+      acBtn.addEventListener('click', function () {
+          afterNum = 0;
+          beforeNum = 0;
+          displayValue.innerText = '0';
+          for (i = 0; i < operBtn.length; i++) {
+              operBtn[i].style.backgroundColor = 'green';
+              operBtn[i].style.color = '#000';
+          }
+          afterNumOn = true;
+          beforeNumOn = true;
+          dotOn = true;
 
-        });
+      });
 
-        // 참고 https://joooing.tistory.com/entry/%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-ver1-CSSactive%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%B4-%EB%B2%84%ED%8A%BC-%EB%88%84%EB%A5%B4%EB%8A%94-%ED%9A%A8%EA%B3%BC-%EB%82%B4%EA%B8%B0
-        // oper가 중복입력가능
-        // 콤마 찍기
+      // 참고 https://joooing.tistory.com/entry/%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-ver1-CSSactive%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%B4-%EB%B2%84%ED%8A%BC-%EB%88%84%EB%A5%B4%EB%8A%94-%ED%9A%A8%EA%B3%BC-%EB%82%B4%EA%B8%B0
+      // oper가 중복입력가능
+      // 콤마 찍기
     </script>
-</body>
-
+  </body>
 </html>

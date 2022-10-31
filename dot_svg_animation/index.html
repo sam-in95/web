@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>svg animation test</title>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100vh"
+      viewBox="0 0 1920 1080"
+    >
+      <rect
+        id="dot_1"
+        class="test_dot"
+        data-name="dot 1"
+        width="30"
+        height="30"
+        x="5%"
+        y="50%"
+        rx="15"
+      />
+    </svg>
+
+    <p class="svg_text svg_text_1">점이였던 우리가</p>
+    <p class="svg_text svg_text_2">선이 되고</p>
+    <p class="svg_text svg_text_3">면이 되기 까지</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

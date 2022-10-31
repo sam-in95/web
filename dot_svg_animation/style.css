@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  background-color: #dcdcdc;
+}
+
+.svg_text {
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+  /* width: 200px; */
+  /* background-color: blue; */
+}
+
+.svg_text_1 {
+  top: 49.8%;
+  left: 16%;
+}
+
+.svg_text_2 {
+  top: 49.8%;
+  left: 42%;
+  opacity: 0;
+}
+
+.svg_text_3 {
+  top: 49.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: #dcdcdc;
+  /* transform: translateX(-50%); */
+}
